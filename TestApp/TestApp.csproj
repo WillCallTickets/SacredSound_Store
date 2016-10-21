@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TestApp</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TestApp</RootNamespace>
+    <StartupObject>TestApp.MultiThreadTestApp_StringConcat</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ProjectGuid>{61A14F52-BA86-4680-9016-AA8575D75946}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/TestApp/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dotless.Core">
+      <HintPath>..\packages\dotless.1.4.1.0\lib\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.0.3.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Wcss\bin\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MultiThreadTestApp_StringConcat.cs" />
+    <Content Include="app.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="images\2oemwisg.jpg" />
+    <Content Include="images\9_30dc300.gif" />
+    <Content Include="images\adex1.jpg" />
+    <Content Include="images\ADEX_cover_300.jpg" />
+    <Content Include="images\ADEX_cover_300_b.jpg" />
+    <Content Include="images\ADEX_cover_300_c.jpg" />
+    <Content Include="images\ADEX_cover_600.jpg" />
+    <Content Include="images\ADEX_cover_600_b.jpg" />
+    <Content Include="images\ADEX_cover_600_c.jpg" />
+    <Content Include="images\ADEX_cover_superpak_300.jpg" />
+    <Content Include="images\aragon.jpg" />
+    <Content Include="images\ark.jpg" />
+    <Content Include="images\ART800.jpg" />
+    <Content Include="images\ARTCOVER300.jpg" />
+    <Content Include="images\ARTCOVER800.jpg" />
+    <Content Include="images\ARTCOVER800B.jpg" />
+    <Content Include="images\artifact.jpg" />
+    <Content Include="images\artifact2.jpg" />
+    <Content Include="images\Athens.jpg" />
+    <Content Include="images\atlvzw.jpg" />
+    <Content Include="images\axeback800.jpg" />
+    <Content Include="images\Axe_Cover_400.jpg" />
+    <Content Include="images\back800.jpg" />
+    <Content Include="images\baltimore.jpg" />
+    <Content Include="images\bama.jpg" />
+    <Content Include="images\blackwater.jpg" />
+    <Content Include="images\boston.jpg" />
+    <Content Include="images\boulder.jpg" />
+    <Content Include="images\Buffalo300.jpg" />
+    <Content Include="images\burlington.jpg" />
+    <Content Include="images\CD300.jpg" />
+    <Content Include="images\Charleston300.jpg" />
+    <Content Include="images\CLEVE300.jpg" />
+    <Content Include="images\dallas300.jpg" />
+    <Content Include="images\Desert-Copy.jpg" />
+    <Content Include="images\dvdaxe800.jpg" />
+    <Content Include="images\Eugene.jpeg" />
+    <Content Include="images\fanpackbannerFINAL400copy.jpg" />
+    <Content Include="images\fanpackbannerFINALcopy.jpg" />
+    <Content Include="images\FILL.jpg" />
+    <Content Include="images\fillmore_800_1229.jpg" />
+    <Content Include="images\fillmore_800_1230.jpg" />
+    <Content Include="images\fl3noif0.gif" />
+    <Content Include="images\Flagstaff300.jpg" />
+    <Content Include="images\foil_800_men_b.jpg" />
+    <Content Include="images\here_catch_cover301.jpg" />
+    <Content Include="images\here_catch_cover301bcopy.jpg" />
+    <Content Include="images\HOB1300.jpg" />
+    <Content Include="images\hobchi.jpg" />
+    <Content Include="images\hobheader300.gif" />
+    <Content Include="images\house_of_blues.jpg" />
+    <Content Include="images\IMG_7005.JPG" />
+    <Content Include="images\IMG_7011.JPG" />
+    <Content Include="images\jovheb3c.jpg" />
+    <Content Include="images\kc.jpg" />
+    <Content Include="images\LAHOB300.jpg" />
+    <Content Include="images\latc.jpg" />
+    <Content Include="images\Madison300.jpg" />
+    <Content Include="images\mixtape.jpg" />
+    <Content Include="images\mixtape2.jpg" />
+    <Content Include="images\Montblue300.jpg" />
+    <Content Include="images\national.jpg" />
+    <Content Include="images\NOLA300.jpg" />
+    <Content Include="images\nola_heart300_.jpg" />
+    <Content Include="images\NORFOLK300.jpg" />
+    <Content Include="images\nyc.jpg" />
+    <Content Include="images\Oakland300.jpg" />
+    <Content Include="images\ohrn0sms.jpg" />
+    <Content Include="images\ojjsiroz.jpg" />
+    <Content Include="images\OKL300.jpg" />
+    <Content Include="images\oldtown.jpg" />
+    <Content Include="images\omaha.jpg" />
+    <Content Include="images\Open800.jpg" />
+    <Content Include="images\Opendvd800.jpg" />
+    <Content Include="images\packshot350.jpg" />
+    <Content Include="images\packshot350b.jpg" />
+    <Content Include="images\pageant1.gif" />
+    <Content Include="images\pageant_300.jpg" />
+    <Content Include="images\PBadex_combo.jpg" />
+    <Content Include="images\peaceblaster3.jpg" />
+    <Content Include="images\Penguins.jpg" />
+    <Content Include="images\perspectives.jpg" />
+    <Content Include="images\perspectives2.jpg" />
+    <Content Include="images\PH300.jpg" />
+    <Content Include="images\philly.jpg" />
+    <Content Include="images\Portland300.jpg" />
+    <Content Include="images\raleigh.jpg" />
+    <Content Include="images\remix_front_300.jpg" />
+    <Content Include="images\remix_front_800.jpg" />
+    <Content Include="images\rr0910.jpg" />
+    <Content Include="images\rr0911.jpg" />
+    <Content Include="images\SAntaCruz1300.jpg" />
+    <Content Include="images\Santa_Cruz2300.gif" />
+    <Content Include="images\SEASONS._SL500_AA300_.jpg" />
+    <Content Include="images\Seattle300.jpg" />
+    <Content Include="images\sts9-peaceb-7inSIDEAsmallforweb.jpg" />
+    <Content Include="images\tabby.jpg" />
+    <Content Include="images\tulsa.jpg" />
+    <Content Include="images\utica.jpg" />
+    <Content Include="images\vhnnbym0.jpg" />
+    <Content Include="images\Vinylout800.jpg" />
+    <Content Include="images\VINYLSLEEVEface301copy.jpg" />
+    <Content Include="images\WATER300.jpg" />
+    <Content Include="merchbundle.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{75275DDF-963B-44B5-B0B6-FB5BB87002A6}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wcss\Wcss.csproj">
+      <Project>{4731B95C-706B-43D2-B881-86EC34C4EE49}</Project>
+      <Name>Wcss</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿<tr>
+                                    <td colspan="99">
+                                        <div style="background-color: #f1f1f1;border: solid #333 1px;">
+                                         <span class="attrib">
+                                            <span class="headerlabel">Flat Ship $$$:</span>
+                                            <asp:TextBox ID="txtFlatShip" runat="server" Text='<%#Bind("mFlatShip", "{0:n2}") %>' MaxLength="8" Width="60px" />
+                                            <asp:CompareValidator Display="dynamic" CssClass="validation"  ValidationGroup="entity" 
+                                                ID="CompareValidator2" runat="server" ErrorMessage="Please enter a numeric quantity."
+                                                ControlToValidate="txtFlatShip" Operator="DataTypeCheck" Type="Double">*</asp:CompareValidator>
+                                            <asp:RangeValidator ID="RangeValidator5" runat="server" ControlToValidate="txtFlatShip"
+                                                CssClass="validation" ErrorMessage="Please enter a positive value for shipping less than 1000." Display="dynamic"
+                                                MaximumValue="1000" MinimumValue="0" Type="Double" ValidationGroup="entity">*</asp:RangeValidator>
+                                                
+                                        </span>
+                                        <span class="attrib">
+                                            <span class="headerlabel">Flat Method:</span>
+                                            <asp:TextBox ID="txtFlatMethod" runat="server" Text='<%#Bind("vcFlatMethod") %>' />
+                                        </span>
+                                        <span class="attrib">
+                                            <span class="headerlabel">Ship Separate:</span>
+                                            <asp:CheckBox ID="chkSeparate" runat="server" Checked='<%#Bind("bShipSeparate") %>' />
+                                        </span>
+                                        <span class="attrib">
+                                            <span class="headerlabel">Pre/Back OrderDate</span>
+                                            <asp:TextBox ID="txtBackorder" MaxLength="10" Width="60px" runat="server" />
+                                            <cc1:MaskedEditExtender ID="MaskedEditExtender6" runat="server" TargetControlID="txtBackorder" 
+                                                Mask="99/99/9999" MaskType="Date" AcceptAMPM="false" MessageValidatorTip="true" 
+                                                OnFocusCssClass="maskededitfocus" OnInvalidCssClass="maskedediterror" />
+                                            <cc1:MaskedEditValidator ID="MaskedEditValidator11" runat="server" ControlToValidate="txtBackorder" 
+                                                ControlExtender="MaskedEditExtender6" display="Static" Text="*" CssClass="validator"
+                                                ToolTip="Please enter a date" InvalidValueMessage="date is invalid." 
+                                                ValidationGroup="entity" />
+                                        </span>
+                                         <span class="attrib"><a class="btnadmin" href="javascript: doPagePopup('/Admin/Inst_MerchShipping.html', 'false');">shipping notes</a></span>
+                                    </td>
+                                </tr>

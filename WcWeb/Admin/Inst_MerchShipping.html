@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+
+    <div>
+        <h4>These shipping options are currently in the works - don't expect them to do anything yet!</h4>
+    </div>
+    <div>
+        Because it is, by nature, so complicated, this page will eventually show a flowchart describing how merchandise shipping works    
+    </div>
+
+    <ul>
+        <li>Allow time for backorder process. Receive/stock shelves, etc</li>
+        <li>Flat shipping applies to continental us only. Foreigners will be offered worldwide rates</li>
+        <li>Ship separately can have mult of the same item - sometimes it may be coming from a diff location</li>
+        <li>Group my orders cannot override ship separately</li>
+        <li>Add extra weight to flat ship orders if they are in oversize/non-standard packaging</li>
+    </ul>
+    
+    <div style="white-space: pre;">
+    
+        //determining ship date
+        //do not guarantee to ship the same day - allow this when things get bigger
+        DateTime shipDate = sourceDate.AddDays(1);//always add a day
+
+        //presuppose shipping days are mon, wed and fri
+        //if shipdate is saturday or sunday - make it monday
+        //if it is a tues or thurs then add a day 
+        
+        
+    
+        set order ship date 
+        
+        foreach ( merchandise item in the order )
+        {
+            if ( item is normal shipping )
+                
+                    add item to normal ship list
+                    
+            else if ( ReduceShipments And Backordered AND NOT FlatShipping AND NOT ShipSeparately )
+            
+                    add item to normal ship list
+                    set order ship date to the backorder date if the backorder date is later
+                    
+            else if ( Backordered OR FlatShipping OR ShipSeparately )
+            
+                get ship rates (this also provides address verification)
+                
+                if ( error ) return to checkout so that cust can edit info
+                    
+                if ( FlatShipping AND Customer is in Continental US)
+                
+                    list - add flat rate only to choices (a single pre-selected choice will be shown)
+                    
+                else
+                
+                    list - add get rates from above
+                    
+                    
+                    
+            if the list has items
+            
+                display list with merch item
+        
+        }
+        
+        
+        if there are items for normal shipping 
+        
+            get rates
+            
+            if ( error ) return to checkout so that cust can edit info
+            
+            list - add all rates
+        
+    </div>
+    
+    
+</body>
+</html>

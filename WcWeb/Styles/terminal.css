@@ -1,0 +1,100 @@
+﻿
+@import url("reset.css");
+@import url("piestyle.css");
+
+
+body { border:solid #666 1px; background-color:white; width:1200px; height:800px; font-family: 'Helvetica Nueue', Helvetica, Arial; font-size:12px; }
+
+.clear { clear:both; border:none !important; }
+.nowrap { white-space:nowrap; }
+
+TABLE TR.separator { border-bottom: solid #ccc 1px; }
+TABLE TH { text-align:left; }
+
+#termheader {}
+#loguser {}
+#logname {}
+#termticket {}
+
+
+.watermarkCss { color:#999999;font-style:italic; }
+
+.term-valcontainer { border:solid green 0px;position:relative;font-weight:bold;font-size:1.1em;color:Red; }
+.term-validator { }
+.term-valsummary { border:solid red 2px;margin:8px 8px 16px 8px;padding:12px;width:50%;min-height:48px;}
+.term-valsummary UL { margin-top:8px;margin-bottom:8px;padding-left:32px;line-height:24px;  
+    -webkit-text-shadow: #ccc 3px 3px 6px;
+    -moz-text-shadow: #ccc 3px 3px 6px;
+    text-shadow: #ccc 3px 3px 6px;
+    /*IE is sol on this one*/ }
+.term-valexclamation {
+    float:left;margin:10px 20px;line-height:normal;
+    color:white !important;/*hide the text*/
+    display:inline-block;
+    background: url(/Images/redex32.png) no-repeat;width:32px;height:32px; }
+
+      
+  
+      
+      
+.term-section { border:solid red 1px; margin-bottom:12px; }
+.term-wrapper {}
+
+.term-cmd INPUT {  }
+
+#term-nav { background: url(/Images/Nav/navbg4.png) repeat-x; }
+#term-nav-wrapper { margin: 12px 8px; }
+#term-nav INPUT { margin-right:24px; } 
+
+.btn-delete { background: url(/Images/recycle_bin-24.png) no-repeat;width:24px;height:24px;margin:0 12px;cursor:pointer;padding:0; }
+
+.selected-page { color:Red; }
+
+#term-setup TABLE TH, #term-setup TABLE TD { padding:4px;}
+#term-setup TABLE TH, #term-setup TABLE TD, #term-setup LI {vertical-align:middle;}
+#term-setup H3 { background-color:#666; color:#fff;padding:4px;margin:2px;}
+#term-setup > DIV { border: solid blue 0px;padding:8px; }
+#term-lists > DIV { border:solid green 0px; width:32%; float:left;margin-right:8px; }
+
+
+TD.termtotal { text-align:right;}
+TD.linetotal { text-align:right; }
+TD.linetotal SPAN { display:inline-block;width:75px;}
+
+TD.linetotal SPAN + SPAN + SPAN,
+TD.termtotal SPAN + SPAN {display:inline-block;width:100px;}
+
+
+
+
+
+/*#termticket .filter-panel, #termticket .btn-reset { display:none;}*/
+
+
+
+
+/*
+#term-cartwrapper { border:solid green 2px; position:relative; }
+#termfunctions { border:solid red 1px;float:left;width:65%; }
+#tcommands  { border:solid purple 1px; }
+#tvalidation  { border:solid teal 1px; }
+#tcheckout  { border:solid yellow 1px; }
+#termtotals { border:solid blue 1px;float:right;width:33%; }
+*/
+
+/*
+
+
+
+
+
+#term-lists {border:solid yellow 1px;position:relative;float:left;width:100%;}
+
+#term-setup TABLE TH, #term-setup TABLE TD { margin:2px;padding:2px;line-height:18px; }
+
+#term-users TABLE { border: solid blue 0px; }
+
+.term-userlist TABLE TR.separator TD { border-bottom: solid #666 1px; color:Blue; }
+
+
+*/

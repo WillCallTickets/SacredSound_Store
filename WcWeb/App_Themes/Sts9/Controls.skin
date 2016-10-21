@@ -1,0 +1,2 @@
+<asp:Label runat="server" SkinID="FeedbackOK" ForeColor="green" cssClass="FeedbackOK" />
+<asp:Label runat="server" SkinID="FeedbackKO" ForeColor="red" cssClass="FeedbackKO"  />

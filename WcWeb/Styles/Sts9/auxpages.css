@@ -1,0 +1,66 @@
+
+#useraccount DIV.legend, #recoverpass DIV.legend {font-size:18px;}/*allow for longer email addresses not to wrap*/
+#useraccount .userlinks {display:block;margin-bottom:12px;}
+
+#useraccount .userlinks A, #signup-panel A.btntribe {margin-right:24px;}
+#useraccount H4 {border:solid blue 0px;padding:2px 0 4px 16px;padding-top:4px;margin-bottom:12px;
+    font-weight:bold;font-size:18px;text-transform:lowercase;
+    color:#ffffff; background-color:#000000;}
+
+#register .title, #changepass .title {font-size:18px;padding-left:12px;}
+
+#recoverpass DIV.title, #mailermanage DIV.title 
+{border:solid #666666 1px; font-size:14px;background-color:#cccccc;color:#000000;}
+
+TABLE.crewtable {}
+/*TH is in default.css */
+
+TABLE.crewtable TABLE TD {color: #cccccc; text-decoration: underline; padding-right:12px;border:none;}/*pagers*/
+TABLE.crewtable TD {padding:2px 0;border-bottom:solid #cccccc 1px;}
+.rowcounter {width:24px;color:#999;text-align:center;}
+.gridselectedrow {background-color:#f1f1f1;}
+
+.membersince {font-weight: bold; margin-bottom: 12px; }
+
+.profile-table TH, #contact TH, #register TH {text-align:left;width:80px;white-space:nowrap;}
+.profile-table TH, .profile-table TD, #contact TH, #contact TD, #register TH, #register TD {vertical-align:middle;padding:2px;}
+
+.usersubscription {border:solid #cccccc 1px;padding:4px;}
+.usersubscription .controlheader {display:block;color:#ffffff;background-color:#000000;
+    font-size:14px;font-weight:bold;padding:4px;}
+.usersubscription UL {border:solid red 0px;margin:8px;color:#000000;}
+.usersubscription .feedback SPAN {display:block;margin:8px;}
+.usersubscription INPUT {vertical-align:-3px;}
+.usersubscription .subscriptionlistitem {display:inline;padding-left:4px;font-weight:bold;}
+.usersubscription .subscriptiondescription {color:#666666;margin:0 0 4px 24px;}
+
+.giftredemption DIV.section { margin-bottom: 24px; }
+
+.giftredemption DIV.redeem { border: solid #cccccc 1px; background-color: #f1f1f1; padding: 8px; }
+.giftredemption .cartfunction .cartlinks A.btntribe { margin-left: 16px; }
+
+.custpoints TABLE { width: 300px; }
+.custpoints TABLE.crewtable TD { text-align: center; vertical-align: middle; }
+
+#contact {  }
+#contact-links, #signup-panel, #faq-panel {margin:12px;font-size:13px;}
+#signup-panel {font-weight:bold;}
+#signup-panel .greeting, #signup-panel INPUT {margin-bottom:12px;}
+
+#contact-links>DIV {border:solid blue 0px;margin-bottom:8px;}
+TABLE.contact{ margin: 25px 12px 12px 12px; }
+TABLE.contact A.btntribe {padding:4px 8px;}
+.eachandevery {color: red; font-size: 14px; font-weight: bold;}
+#contact #contact-links A {font-weight:bold;background-color:#eeeeee;text-decoration:underline;}
+#contact .success, .passwordrecoverysuccess, #mailerconfirm { color: Green; font-weight: bold; font-size: 16px; }
+
+#ctl00_MainContent_ctl00_CreateUserWizard1_FinishNavigationTemplateContainerID_FinishLinkButton {position:relative;left:-380px;top:12px;}
+#register A.btntribe { float: left; line-height: 21px; width: 100px; }
+#register A.btntribe {padding:4px 8px;}
+
+DIV.warning {padding:12px;vertical-align:top;}
+.cookiewarning .title {margin:0;font-size:14px;padding-left:8px;background-color:#cccccc;border:solid #999999 1px;}
+#register .cookiewarning .title {font-size:14px;}
+.warning .cookiewarning {margin:0;}
+
+#customerhistory A.descrow { display: block; }

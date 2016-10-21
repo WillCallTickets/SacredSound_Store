@@ -1,0 +1,21 @@
+﻿BODY.verification {border-top:none;padding:0;color:#ffffff;}
+#verify18_container H2 {font-size:22px;margin:6px 0 24px 0;}
+#verify18_container H4 {font-size:14px;margin-bottom:16px;}
+#verify18_container #message {line-height:32px;color:Red;font-size:14px;}
+#verify18_container SELECT
+{
+    margin-right:12px;
+    line-height:16px;
+    height:26px;
+}
+#verify18_container A#btnSubmit 
+{
+    background-color:#cccccc;
+    color:#222222;
+    font-weight:bold;
+    display:inline-block;    
+    padding:6px 12px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius: 2px;    
+}

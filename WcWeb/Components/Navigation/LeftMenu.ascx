@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LeftMenu.ascx.cs" EnableViewState="false" Inherits="WillCallWeb.Components.Navigation.LeftMenu" %>
+<%@OutputCache Duration="20" VaryByParam="none" %> 

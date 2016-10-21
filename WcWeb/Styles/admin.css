@@ -1,0 +1,1165 @@
+
+
+.btn {
+    display:inline-block;
+    cursor:pointer;
+}
+
+.btn-primary {
+
+}
+
+.btn-sm {
+    
+    font-size:12px;
+    padding: 2px 6px;
+}
+
+TD.batch-command .lbl-rownum {
+    font-weight:bold;
+    color:#666;
+    padding:4px 8px;
+}
+
+TD.batch-command .btn {
+    width:60px;
+    margin: 0 2px 5px 2px;
+}
+
+
+.setting-max-width {
+    word-wrap: break-word;
+    max-width:300px;
+}
+
+#twelve { font-size:1.2em;color:#3A2916; }
+
+
+#twelve .rounded {
+	border-top: 1px solid #684D2E;
+	border-right: 1px solid #684D2E;
+	border-bottom: 1px solid #684D2E;
+	border-left: 1px solid #684D2E;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 4px;
+	behavior: url(/Styles/PIE.htc);
+	margin-bottom: 8px;
+}
+
+.lightlee {color:#ccc;}
+
+#twelve INPUT, #twelve SELECT { font-size:22px;font-weight:bold;height:32px;}
+#twelve SELECT { font-size:18px; }
+#twelve INPUT.butn { padding:4px; font-size:1.0em;height:auto;color:#3A2916; }
+
+
+#twelve #cainer { border:solid blue 0px;padding:0 24px 24px 2px; }
+
+#twelve #header DIV {  }
+
+#twelve #ticket-select TABLE.info-table .info-header,
+
+#twelve #header, #twelve .selct { background: transparent url(/Images/nav/navbgbrwn60.png) repeat-x; }
+#twelve .selct { padding:4px;margin-bottom:4px;}
+
+#twelve #header TABLE { width:100%;margin-top:0; }
+#twelve #header TABLE TH { white-space:nowrap;vertical-align:middle;font-size:1.5em;padding:0 12px; }
+#twelve #header TABLE TD { padding:0 12px 0 12px;vertical-align:middle; }
+#twelve #header INPUT { text-align:center;}
+
+
+.gotit {background-color:Red;}
+
+#twelve .calendarclock TABLE {width:auto !important;margin-top:-2px; }
+#twelve .calendarclock TABLE TD + TD + TD { padding:0 !important;}
+#twelve .calendarclock TABLE TD INPUT.txtbox {float:none;width:120px !important; }
+#twelve .calendarclock TABLE TD INPUT.calbtn {float:none;background: transparent url(/Images/cal_44.png) no-repeat;
+	width:44px;height:44px;border:none;outline:none;cursor:pointer;}
+#twelve .calendarclock TABLE TD INPUT.calbtn:hover { background: transparent url(/Images/cal_48.png) no-repeat;}
+
+TABLE.info-table { font-size:.8em;border-color:#A38562;}
+TABLE.info-table TH, TABLE.info-table TD { padding:2px;vertical-align: middle;border-color:#A38562; border-bottom: solid #A38562 2px; }
+TABLE.info-table TD DIV.price-comp {font-size:.7em;margin-top:4px;}
+TABLE.info-table TD DIV.describe {height:40px;overflow-y:scroll;}
+TABLE.info-table .info-check { display:block;width:52px;}
+
+#twelve #filters {margin-top:8px;background-color:#B6A07B;padding:4px;}
+
+TABLE.filter-section {width:100%;}
+.filter-section TD {font-size:.8em;padding:0 8px 0 0;}
+.filter-section H4 { text-align:center;}
+/*.filter-section TH {text-align:left;margin-left:12px;}*/
+.filter-section INPUT {height:auto !important;margin:4px 12px 0 4px;}
+.filter-section LABEL {margin-right:8px;}
+.filter-cell {padding:4px;background-color:#F5F0DC;color:#3A2916;white-space:nowrap;}
+
+
+#twelve .googlepager {font-size:.8em;font-weight:bold;vertical-align:middle;} 
+#twelve .googlepager SELECT {height:auto !important;padding:0 !important;}
+#twelve .googlepager STRONG {font-size:1em;} 
+#twelve .googlepagercontainer {white-space:nowrap; margin-bottom:0;padding-top:8px;background: url(/Images/nav/navbgbrwn48.png) repeat-x;}
+#twelve .googlepagercontainer .ggl-template { border:solid blue 0px; font-size:.8em;font-weight:bold;padding:0;}
+#twelve .googlepagercontainer .ggl-template INPUT.butn { margin-right:8px;cursor:pointer;}
+#twelve .googlepagercontainer .ggl-template .checkbox INPUT {height:16px;position:relative;top:3px;margin-right:10px;}
+#twelve .googlepager .ggllinks {white-space:nowrap;}
+
+.commando .checkbox INPUT {height:16px;position:relative;top:3px;margin-right:10px;}
+
+.phoner {
+    display:none;
+}
+.phoner LABEL {
+    margin-right:4px;
+}
+
+
+
+/*for cells that sohuld mimic an input*/
+TD.cellinput {width:100%;background-color:#ffffff;color:#000000;}
+
+#tkt-preview {}
+#tkt-preview TABLE.tickettbl { border:solid #000 2px;margin:24px;background-color:#ccc; }
+#tkt-preview TABLE.tickettbl TD {padding:8px;}
+
+#tkt-preview TABLE.tickettbl TABLE {width:100%;margin-bottom:12px;}
+#tkt-preview TABLE.tickettbl TABLE TD {padding:0 2px;}
+
+#tkt-preview #ticket-nfo {text-align:center;background-color:#ddd;}
+#tkt-preview #ticket-nfo H4, #tkt-preview #ticket-nfo H6
+{background-color:#ddd;}
+
+#tkt-preview H4.logo {height:32px;line-height:32px;}
+#tkt-preview H1 {}
+#tkt-preview H2 {}
+#tkt-preview H3 {}
+#tkt-preview H4 {line-height:20px;background-color:#999;}
+#tkt-preview H5 {}
+#tkt-preview H6 {line-height:20px;}
+
+TABLE.tkt-params {border:none;color:#ffcc55;}
+TABLE.tkt-params TH {padding:4px 8px;text-align:left;}
+TABLE.tkt-params TD {padding:4px 8px;}
+
+TABLE.tkt-params A.btn-print {display:block;height:40px;width:80px;padding:4px;
+	background: transparent url(/Images/nav/navbggld60.png); cursor:pointer;color:#333;
+	line-height:40px;text-align:center;text-decoration:none;border:solid #333 2px !important; }
+
+
+
+.btnpub 
+{
+	padding:2px 8px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:12px;
+	line-height:16px;
+	vertical-align:3px;
+	background: transparent url(/Images/nav/24redgrad.png);
+	border: 1px solid #cc0000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	behavior: url(/Styles/PIE.htc);
+}
+
+#campaignlist .cmdsection .sectitle {width:80px;display:inline-block;font-size:12px;}
+
+#ChooserMerch-Container {width:450px;padding:6px;}
+#ChooserTicket-Container {width:450px;padding:6px;}
+#ChooserTicket-Container .selectors, #ChooserMerch-Container .selectors {border:solid yellow 0px;font-size:11px;line-height:10px;padding:2px 0;}
+#ChooserTicket-Container .selectors DIV, #ChooserMerch-Container .selectors DIV {border:solid blue 0px;text-align:left;line-height:12px;}
+#ChooserTicket-Container .selectors SPAN, #ChooserMerch-Container .selectors SPAN {border:solid red 0px;display:inline-block;width:56px;vertical-align:middle; }
+#ChooserTicket-Container .selectors SELECT, #ChooserMerch-Container .selectors SELECT {font-size:9px;line-height:10px;width:375px;max-width:375px;}
+#ChooserTicket-Container SPAN.clk TABLE TD {border:solid red 0px;font-size:9px !important;padding:0;}
+
+.taos_thm .btnpub, .taos_thm #campaignlist .cmdsection .sectitle,
+.taos_thm #ChooserTicket-Container .selectors, .taos_thm #ChooserMerch-Container .selectors, 
+.taos_thm #ChooserTicket-Container .selectors SELECT, .taos_thm #ChooserMerch-Container .selectors SELECT, 
+.taos_thm #ChooserTicket-Container SPAN.clk TABLE TD { font-size:14px; }
+
+
+.Normal
+{
+  border: dashed 1px #000000;
+  background-color: #666666;
+  cursor: auto;
+}
+ 
+.Progress
+{
+  border: dashed 1px #000000;
+  background-color: #999999;
+  background-image: url(/Images/loaderCirc.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: wait;
+}
+
+
+#overlay-wysiwyg { border:solid yellow 0px;/*background-image:url(/Images/overlay/transparent_912a700.png); */
+    background-color:#222222;
+	color:#efefef; width:912px;height:700px; padding: 42px 32px 32px 32px; overflow:hidden; position:absolute; }
+
+#overlay-container {border:solid blue 0px;margin: 0 4px 0 8px;overflow:hidden;}
+#wysiwyg-header {border:solid red 0px;margin:0 12px 8px 0;}
+#wysiwyg-header H3 {display:inline-block;color:#ffcc55;font-size:18px;line-height:26px;border:solid green 0px;}
+#wysiwyg-header SPAN.wsyiwyg-command {border:solid green 0px;float:right;margin-right:36px;line-height:28px;}
+
+h3.entry-title {margin:0 12px 4px 12px;color:#ffcc55;font-size:18px;font-weight:bold;}
+h3.entry-title A, .entry-title A {color:#ffcc55;}
+
+
+#overlay-wysiwyg .close {border:solid blue 0px;position:absolute; top:10px; right:10px; cursor:pointer;
+	font-size:12px;font-weight:bold;color:#999999;vertical-align:middle;line-height:36px;
+	padding-right:36px;text-align:right;
+	height:35px; width:200px; background-image:url('/Images/overlay/close.png'); background-repeat:no-repeat; background-position:right; }
+
+/* text that was edited in the ckeditor is displayed here */
+.desc-control {white-space:pre;border:solid #cccccc 1px;max-width:700px;height:100px;overflow:auto;
+	background-color:White;color:#000000;font-size:11px;}
+.taos_thm .desc-control { font-size:12px; }
+.desc-control {white-space:normal !important;line-height:normal !important;}
+/*This is the editable area TR - within the ckEditor */
+#cke_contents_Ck_Edit {border:none;line-height:normal;}
+
+
+#showcreator #venueeditor .jqhead, #showcreator #acteditor .jqhead,
+.jqpnl {background-color:#444444;padding:4px 8px;}
+#showcreator .jqhead input {border:none;}
+
+.edittabl {margin:4px 0 12px 0;color:#ffcc55;}
+.edittabl TH {white-space:nowrap;text-align:right;font-size:18px;vertical-align:top;}
+
+.edittabl TH, .edittabl TD {padding:4px;line-height:18px;}
+
+.iit .edittabl TH, .iit .edittabl TD {padding:12px;line-height:24px;}
+.crt .edittabl TH, .crt .edittabl TD {padding:8px;line-height:18px;vertical-align:middle;}
+#srceditor TABLE.sidbar {margin-top:6px;}
+#srceditor TABLE.sidbar TD, .crt .edittabl TH, .crt .edittabl TD {padding:4px;vertical-align:middle;}
+
+
+.crt .edittabl .calendarclock TABLE .datepart {padding-left:0;}
+.crt .edittabl .calendarclock TABLE .datepart INPUT {line-height:18px;height:20px;border:solid red 0px;}
+.crt .edittabl SELECT.ages {vertical-align:-8px;}
+.crt .edittabl TR.showtime .listing-row {border:solid red 0px;padding-right:0;width:20px;}
+
+.edittabl INPUT, .edittabl SELECT {line-height:16px;}
+
+.edittabl .infomark {vertical-align:middle;}
+
+.jqinstruction UL {line-height:12px;max-width:650px;}
+.jqinstruction LI {line-height:12px;max-width:650px;white-space:normal;}
+
+#srceditor .sidbar INPUT.btnmed,
+.cmdsection INPUT.btnmed {width:120px;}
+
+#srceditor #showticket .cmdsection INPUT.btnmed {width:100px;}
+.taos_thm #srceditor .sidbar INPUT.btnmed, 
+.taos_thm .cmdsection INPUT.btnmed {width:140px;}
+.taos_thm #srceditor #showticket .cmdsection INPUT.btnmed {width:120px;}
+
+.fetcmd .btntny,
+H3 .btnmed,
+#edituser .btnmed,
+#srceditor .sidbar INPUT.btnmed, 
+.cmdsection INPUT.btnmed,
+#wysiwyg-container .btnmed, .edittabl .btnmed {line-height:12px;vertical-align:2px;background: transparent url(/Images/nav/navbggld32.png) ;}
+
+
+.contextselect {vertical-align:2px;background: transparent url(/Images/nav/navbgcpr48.png) ;}
+
+.intr {line-height:16px;margin-top:4px;font-size:12px;font-weight:normal;color:#999999;}
+.edittabl TD.listing-row {font-weight:bold;font-size:18px;white-space:nowrap;line-height:18px;}
+
+/*, .edittabl TD.listing-row INPUT*/
+SPAN.nbr {display:inline-block;font-weight:normal;font-size:14px;
+	margin:0 8px 0 2px;background-color:#f1f1f1; color:#333333;min-width:30px;text-align:center;}
+.edittabl TD.listing-row INPUT {margin-right:24px;}
+	
+#showcreator .sectitle {display:none;}
+
+/*you either get the rounding or the back color - cant get both*/
+.edittabl INPUT[type="file"] {border:solid #666666 1px;background-image:none;background-color:#ffffff;}
+
+.grid-tabl INPUT[type="checkbox"],
+.edittabl INPUT[type="checkbox"] {border:none;background-color:#f1f1f1; color:#333333;width:30px;text-align:center;}
+
+.fetcmd .btntny,
+TABLE.tkt-params A.btn-print, 
+H3 .btnmed,
+.edittabl TEXTAREA,
+.edittabl INPUT[type="file"],
+.edittabl-wrapper, .show-list, 
+#showchooser INPUT, #showchooser SELECT, 
+#srceditor .sidbar TD, 
+#srceditor .sidbar INPUT.btnmed, 
+.cmdsection INPUT.btnmed, #edituser .btnmed, 
+.edittabl INPUT, .edittabl SELECT, #wysiwyg-container .btnmed {
+	border: 1px solid #000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 2px;
+	behavior: url(/Styles/PIE.htc);
+}
+
+.align-left {text-align:left !important;}
+.align-right {text-align:right !important;}
+.edittabl-wrapper, .show-list {background-color:#222222;border:solid #666666 1px;margin-bottom:12px;padding:12px;}
+
+.show-list {margin-top:18px;}
+
+.edittabl A.btntst {font-size:12px;color:#ffffff;}
+.show-list A {display:block;line-height:22px;font-size:12px;color:#999999;}
+
+.taos_thm .edittabl A.btntst, .taos_thm .show-list A {font-size:14px;}
+
+
+.grid-tabl, .grid-tabl TH, .grid-tabl TD {border-color:#666666 !important;}
+
+.edittabl A.link-addnew {color:#ffcc55;}
+
+INPUT.tpcmd {/*border:solid #cccccc 2px !important;*/
+	width:85px !important;}
+
+
+
+.fbs-likepanel {display:inline;}
+.fbs-likepanel SPAN {display:inline-block;border:solid red 0px;margin: 0 12px;padding:1px 0 1px 28px;vertical-align:middle;}
+.fbs-likepanel .fbs-like {background: transparent url(/Images/fblike_26.png) no-repeat; }
+.fbs-likepanel .fbs-unlike {background: transparent url(/Images/fbunlike_26.png) no-repeat; }
+.fbs-likepanel .fbs-agglike {}
+
+.template-notes {font-weight:bold;color:Red;}
+
+
+/*ORDINAL CONTROLS*/
+
+/*tabs*/
+#ordinal-tabs-container {background-color: #333;}
+#ordinal-tabs { padding: 0px;background-color:#999;background: none;border-width: 0px;}
+#ordinal-tabs UL.ui-tabs-nav {min-width:680px;}
+
+#ordinal-tabs .ui-tabs-nav { background: transparent;border-width: 0px 0px 1px 0px;
+	-moz-border-radius: 0px;-webkit-border-radius: 0px;border-radius: 0px;padding-left: 4px;}
+#ordinal-tabs .ui-tabs-nav LI {width:220px;margin-right:3px;margin-top: 0.3em;font-size: 90%;
+	background: transparent url(/Images/nav/navbggld48dim.png);border:none;}
+#ordinal-tabs .ui-tabs-nav LI A {text-align:center;width:100%;margin: 0;padding-left:0}
+#ordinal-tabs .ui-tabs-nav LI.ui-tabs-selected {margin-top: 0em;font-size: 100%;}
+#ordinal-tabs .ui-tabs-selected {border:none;background: transparent url(/Images/nav/navbggld48.png) !important;font-weight:bold; }
+#ordinal-tabs .ui-tabs-panel {margin: 0em 0.2em 0.2em 0.2em;background: url(images/nav/event-miniCal-background-fx.png) repeat-x scroll 50% top #000;
+	color:#DBC05D;border-width: 2px 2px 2px 2px;border-color:#80641C;}
+#ordinal-tabs .ui-widget-header {border:none;}
+/*end tabs*/
+
+.merch-hire-container {margin: 0;width:75%;min-width:613px;}
+.hire-select {float:left;margin-bottom:16px;width:100%;}
+.hire-select .pnl-title {font-size:14px;font-weight:bold;color:#ccc;padding:5px;display:inline-block;}
+.merch-hire-container SELECT {float:right;font-size:12px;font-weight:normal;line-height:24px;width:85% !important;
+    background-color:#666; color:#fff; padding:5px;border: solid #999 2px;}
+
+/*sortables*/
+.ordinal-wrapper {clear:both;}
+.ordinal-wrapper UL {margin:16px 0;}
+.ordinal-wrapper .cmdsection INPUT.btnmed {width:140px;font-size:12px;}
+.ordinal-wrapper LI.ordinal-header-row {line-height:24px;padding:8px 0;background: transparent url(/Images/nav/navbgblk100.png) repeat-x;}
+.ordinal-wrapper LI.ordinal-header-row SPAN {}
+.ordinal-wrapper LI.ordinal-header-row .cmdsection {float:right;}
+.ordinal-wrapper LI {border:solid #ffcc55 1px;color: #ffcc55;margin:0 0 4px 0;padding:2px 0;line-height:20px;
+	background: transparent url(/Images/nav/navbgblk.png) repeat-x;}
+.ordinal-wrapper LI.notactive, .ordinal-wrapper LI.internal {background: #666;color:#D7B35F;}
+.ordinal-wrapper .ui-state-highlight { height: 1.5em; line-height: 1.2em;background:none;border-width:2px;background-color:#ffcc55; }
+.ordinal-wrapper .ordinal-row, .ordinal-wrapper .ordinal-id
+{color:#ccc;font-size:12px;display:inline-block;width:50px;text-align:center;}
+.ordinal-wrapper .ordinal-info {font-size:10px;display:inline-block;width:60px;text-align:center;}
+.ordinal-wrapper .ordinal-description {display:inline-block;border:solid white 0px;width:14px;}
+.ordinal-wrapper .super-display {color:#666;}
+.ordinal-cmd {float:right;}
+.ordinal-cmd-delete {display:inline-block;width:24px;}
+A.ov-formtrigger-link, A.ordinal-delete-link {display:inline-block;width:20px;height:24px;margin-top:1px;text-indent:-10000px;margin-right:12px;}
+A.ordinal-edit-link {background: transparent url(/Images/editicon20.png) no-repeat;}
+A.ordinal-delete-link {background: transparent url(/Images/recyclebin20.png) no-repeat;}
+/*end sortables*/
+
+/*ordinal input form*/
+.ordinal-modal-container {}
+#ordinal-modal {}
+.required-input {margin-left:8px;font-size:11px;font-weight:bold;vertical-align:1px;color:#cc0000;}
+.ordinal-modal-container #ui-dialog-title-ordinal-modal {color:#444;position:relative;top:-2px;}
+#ordinal-modal .validateTips {color:Red;font-size:11px;padding-bottom:8px;}
+#ordinal-modal .validateTips LI {margin:8px 0;}
+#ordinal-modal #ordinal-entry-internal {display:inline; margin:0 12px;}
+#ordinal-modal #ordinal-entry-form {margin:12px 0;}
+#ordinal-modal LABEL {white-space:nowrap;display:block;margin-top:24px;}
+#ordinal-modal LABEL.check-label {display:inline;}
+#ordinal-modal INPUT {}
+/*end of ordinal form*/
+
+
+
+
+.taos_thm #ordinal-wrapper .fetrow { font-size:14px; }
+.taos_thm #ordinal-wrapper .fetid {font-size:13px;}
+
+
+
+
+
+
+
+
+
+
+#fetord-items {margin: 0;font-family: Arial;width:75%;}
+
+#lmt-display {padding:12px;}
+#lmt-display TD, #lmt-display TH {border:solid red 0px;line-height:18px;vertical-align:top;padding:4px;}
+#lmt-display TR.hdf {color: #ffcc55;background: transparent url(/Images/nav/navbgblk.png) repeat-x;line-height:48px;}
+
+#fetord-wrapper {}
+
+#fetord-items UL {margin:8px 0;}
+
+#fetord-items LI {border:solid #ffcc55 1px;color: #ffcc55;margin:0 0 4px 0;padding:0;
+	background: transparent url(/Images/nav/navbgblk.png) repeat-x;}
+#fetord-wrapper LI.over-quota {border:solid #999999 1px;color: #333333;
+	background: transparent url(/Images/nav/navbgcpr48.png) repeat-x;}
+#fetord-wrapper .ui-state-highlight { height: 1.5em; line-height: 1.2em;background:none;border-width:2px;background-color:#ffcc55; }
+
+#fetord-wrapper LI {line-height:20px;}
+#fetord-wrapper LI.header-item-col {line-height:24px;padding:8px 0;background: transparent url(/Images/nav/navbgblk100.png) repeat-x;}
+#fetord-wrapper LI.header-item-col SPAN {border:none red 1px;}
+#fetord-wrapper LI.header-item-col .cmdsection, #fetord-wrapper LI.header-item-col .fright {float:right;}
+#fetord-wrapper LI.header-item-col .fright {margin-top:8px;}
+
+
+
+#fetord-wrapper .fetrow, #fetord-wrapper .fetid, #fetord-wrapper .fetactive {color:#ccc;font-size:12px;display:inline-block;width:50px;text-align:center;}
+#fetord-wrapper .super-display {color:#666;}
+
+.taos_thm #fetord-wrapper .fetrow { font-size:14px; }
+.taos_thm #fetord-wrapper .fetid {font-size:13px;}
+
+/* CSS3 ROUNDED AND SHADOWING */
+
+/* Use PIE to create html5-like transforms - or at least round corners and
+drop-shadows for IE browsers http://css3pie.com/
+You will need to set the path to match your diretcory structure
+eg: behavior: url(/wp-content/themes/vce/PIE.php); */
+.rounded {
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 4px;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundtop {
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+	padding: 2px 2px 0 0;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundtopleft {
+	-webkit-border-radius: 8px 0 0 0;
+	-moz-border-radius: 8px 0 0 0;
+	border-radius: 8px 0 0 0;
+	padding: 2px 2px 0 0;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundtopright {
+	-webkit-border-radius: 0 8px 0 0;
+	-moz-border-radius: 0 8px 0 0;
+	border-radius: 0 8px 0 0;
+	padding: 2px 0 0 2px;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundbotleft {
+	-webkit-border-radius: 0 0 8px 0;
+	-moz-border-radius: 0 0 8px 0;
+	border-radius: 0 0 8px 0;
+	padding: 0 2px 2px 0;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundleft {
+	-webkit-border-radius: 8px 0 0 8px;
+	-moz-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+	padding: 2px 0 2px 2px;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundright {
+	-webkit-border-radius: 0 8px 8px 0;
+	-moz-border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
+	padding: 2px 2px 2px 0;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundbotright {
+	-webkit-border-radius: 0 0 0 8px;
+	-moz-border-radius: 0 0 0 8px;
+	border-radius: 0 0 0 8px;
+	padding: 0 0 2px 2px;
+	behavior: url(/Styles/PIE.htc);
+}
+.roundbot {
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	padding: 0 0 2px 2px;
+	behavior: url(/Styles/PIE.htc);
+}
+.dropped {
+	-webkit-box-shadow: #444 0 0 6px;
+	-moz-box-shadow: #444 0 0 6px;
+	box-shadow: #444 0 0 6px;
+	behavior: url(/Styles/PIE.php);
+}
+.drop-txt {
+	-webkit-text-shadow: #444 2px 2px 4px;
+	-moz-text-shadow: #444 2px 2px 4px;
+	text-shadow: #444 2px 2px 4px;
+	/*filter: Shadow(Color=#666666, Direction=135, Strength=3);*/
+	filter: DropShadow(Color=#666666, offx=2, offy=2);
+	/*filter: Blur(PixelRadius='15', MakeShadow='true', ShadowOpacity='0.40');*/
+}
+
+
+
+/*#shippingtickets INPUT[type="radio"] {color:Blue;border:solid #000 3px;padding:0;margin:0;}*/
+.rdoinp {border:solid red 0px;line-height:18px;vertical-align:middle;width:100%;display:block;}
+.rdoinp LABEL {border:solid blue 0px;margin:0 18px 0 4px !important;}
+.rdoinp INPUT {border: solid green 0px;margin:0 0 0 0;vertical-align:-3px;}
+
+TD.division-header {font-weight:bold;font-size:16px;height:28px;}
+.taos_thm TD.division-header {font-size:18px;}
+
+.ship-method {}
+.ship-highlight {display:inline-block;background-color: #FEF500; font-weight:bold;padding:4px;font-size:12px;}
+.taos_thm .ship-highlight {font-size:14px;}
+
+#orderview #shpng .ship-method {display:inline;}
+#orderview #shpng .ship-highlight {display:inline;}
+
+#publishMenuButton {cursor:pointer;}
+
+/* root element for accordion. decorated with rounded borders and gradient background image */
+#accordion 
+{
+	background-color:#333;
+	border:1px solid #333;	
+	-background:#333;
+	padding:8px 6px;margin:0 8px 0 3px;font-family:arial;width:130px;
+}
+#accordion {font-size:12px;width:130px;}
+.taos_thm #accordion {font-size:16px;width:140px;}
+
+#accordion A {color:#EECE48;text-decoration:none;display:block;}
+#accordion A.publish, #accordion A.accord
+{
+	color:#EECE48;
+	background:#ccc url(/Images/nav/navbgblk.png);margin:0;
+	padding:4px;
+	margin:0 4px 4px 0;
+	border:1px solid #EECE48;
+	border-bottom:1px solid #BCA02B;
+	font-weight:bold;
+}   
+/* currently active header */
+#accordion A.current {
+	cursor:default;
+	background:#ccc url(/Images/nav/navbggld32.png);
+	border:solid #ddd 1px;
+	color:#fff;
+}
+								
+/* accordion pane */
+#accordion .pane {
+	border:0px solid #fff;
+	display:none;
+	padding:0 0 8px 0;
+	color:#fff;
+}
+#accordion .pane A 
+{
+	margin: 0 0 2px 12px;
+}
+
+#accordion A.current + .pane { display:inline;}
+
+
+/*HEADER*/
+#navman A {margin-right:23px;color:#fff;}
+#navman A:hover {text-decoration:none;}
+#loginsmall {position:relative;border:solid white 0px;display:block;font-weight:bold;}
+#loginsmall #helperfunctions {margin-left:22px;}
+#loginsmall #helperfunctions A, .cartsmall A {color:#fff;font-weight:bold;}
+
+	
+/*THEME DIFFERENCES*/
+.sts9_thm, .agave_thm {font-family:Arial;}
+#adminbg {position:absolute;width:100%;}
+body.sts9_bg {background-color:#F5F0DC;}
+body.agave_bg {background-color:#DFEDFC;}
+body.taos_bg {background-color:#F5F0DC;font-family: Arial;}
+
+.sts9_thm #adminbg {height:40px;background: url('/WillCallResources/Images/UI/bgt.jpg') repeat-x top center;}
+.agave_thm #adminbg {height:40px;background: url('/WillCallResources/Images/UI/bgt.jpg') repeat-x top center;}
+.taos_thm #adminbg {height:40px;background: url('/WillCallResources/Images/UI/bgt.jpg') repeat-x top center;}
+
+.sts9_thm #headsection{height:42px;}
+.agave_thm #headsection{height:42px;}
+.taos_thm #headsection{height:64px;background-color:#F5F0DC;}
+#masthead{}
+#masthead A {text-decoration:none;color:#000000;}
+#headerbar{border:solid orange 0px;padding:0;position:relative;}
+.sts9_thm #adminlogo {background: url('/App_Themes/sts9/pics/Logotpt.png') top left no-repeat;
+	width:120px;height:32px;position:absolute;left:12px;top:6px;}
+.agave_thm #adminlogo {background: url('/WillCallResources/Images/UI/logo_150x32.png') top left no-repeat;
+	width:150px;height:32px;position:absolute;left:12px;top:8px;}
+.taos_thm #adminlogo {background: url('/WillCallResources/Images/UI/logo_135x56.png') top left no-repeat;
+	width:135px;height:56px;position:absolute;left:12px;top:12px;}
+	
+.sts9_thm #navman {left:128px;top:-36px;font-size:18px;}
+.agave_thm #navman {left:188px;top:-33px;font-size:16px;}
+.taos_thm #navman {left:148px;top:-10px;font-size:20px;}
+
+.sts9_thm #navman A {}   
+.agave_thm #navman A {background: url('/Images/nav/navbgblk48.png') top repeat-x;padding:4px;border:solid #333333 2px;color:#333;}  
+.taos_thm #navman A {background: url('/Images/nav/navbggld32.png') top repeat-x;padding:4px;border:solid #443333 1px;}  
+#navman {border:none purple 1px;padding:0;margin:0;position:relative;
+	letter-spacing:-1px;padding:0px 0 0 12px;text-transform:lowercase;width:auto;
+	font-weight:bold;}
+#navman A:hover {color:#ae9631;background-color:#000;text-decoration:none;}
+
+
+#loginsmall {left:1024px;top:-12px;font-size:12px;z-index:12;}
+#loginsmall .functions {left:-100px;top:0px;position:absolute;}
+.cartsmall {position:relative;left:1182px;top:4px;}
+.taos_thm .cartsmall {display:none;left:882px;top:38px;}
+.taos_thm #loginsmall {font-size:14px;top:22px;}
+.taos_thm #loginsmall A {font-size:14px;}
+#loginsmall A, .cartsmall A {font-size:12px;position:relative;z-index:10000;}
+/*todo: cartsmall link is still covered by previous div*/
+
+
+#searchresults {font-weight:normal;font-size:10px;width:1024px;}
+.taos_thm #searchresults {font-size:13px;}
+
+#searchresults #selektor #searchtool {border:solid #999 2px;margin-top:12px;padding:12px;}
+#searchresults #selektor #searchtool SPAN {margin-right:12px;}
+#searchresults #selektor {padding:16px;border:solid #333 2px;background-color:#f1f1e1;}
+#searchresults A.selbtn {margin-right:12px;border:solid #000 1px;padding:4px;color:White;font-size:14px;font-weight:bold;}
+#searchresults A {color:#fff;}
+#searchresults A.btncmd {color:#333;}
+#searchresults A.selbtn {border:solid #EECE48 1px !important;white-space:nowrap;text-decoration:none;}
+#searchresults A.selectd {border:solid #FffFc1 1px !important;
+	background:url('/Images/nav/navbgtan.png') top left repeat-x;color:#FffFc1;}
+
+/*main highlight text color EECE48*/         
+#adminmenu TABLE TD A, .jqhead, .jqedt, .sectitle, 
+.subtitle, .subtitle A, TABLE.hedtbl A, TABLE.invtbl TR.invhed TD, 
+TABLE.invtbl TR.invport TH, TABLE.invtbl TR.invport TD, 
+#showsales TABLE.lsttbl TR.alternaterow TH, #showsales TABLE.lsttbl TR.alternaterow TD.jqshowsect, 
+#edituser .usersubscription .controlheader, #edituser .usersubscription .controlheader .links A,
+.googlepager, .googlepager .ggllinks INPUT, #navskl li, #navskl li a
+{color:#EECE48;}
+#monthlycharges .jqhead TH, .alt1, .alt1 TH {color:#EECE48 !important;}
+/*important borders*/
+#navskl li:hover ul, * html #navskl li:hover ul 
+{border:solid #EECE48 1px !important;}
+
+/*RESERVED*/
+.fxddl{}/*used for referencing a dropdownlist*/
+.fxbtn{}/*btns*/
+
+.taos_thm .fxddl, .taos_thm .opttbl {font-size:14px !important;}
+
+/*SLIDER CONTROLS*/
+.ajax__slider_h_rail {height:22px;}
+.ajax__slider_h_handle {height:22px;width:10px;}
+	 
+/*general & misc*/
+* { padding: 0; margin: 0; }
+#adminbody {color:#fff;width:100%;margin:0;padding:0;height:100%;}
+{font:67% Arial,Helvetica,Geneva,sans-serif;}
+
+
+input {font-family:Arial,Sans-Serif;}
+TD {vertical-align:top;}
+.clear {clear:both;}
+#blank {background-color:#fff !important;background:none;}
+#lowercontent {margin-top:6px;}
+.validationsummary {border: solid red 2px;color:red;font-weight:bold;padding:12px;display:inline-block;} 
+.invisible {display:inline;width:0;height:0;}
+A {text-decoration:underline;}
+.window {display:inline-block;border:solid #000 1px;background-color:#f1f1f1;color:Black;font-weight:bold;padding:1px 12px;}
+TR.rowshipped TH, TR.rowshipped TD {background-color:#FE9090;}
+FIELDSET {border:none;}
+.validator {font-weight:bold;color:Red;width:2px;font-size:24px;line-height:16px;}
+.btnhid { visibility: hidden; }
+.tny {font-size:10px;}
+.sml {font-size:10px;}
+.taos_thm .tny, .taos_thm .sml {font-size:12px;}
+
+.fklbl {background-color:#c1c1b1;}
+.foxtheatre_thm .fklbl {background-color:#e1e1e1;}
+.vzspc8 {margin-bottom:8px !important;}
+
+TR.highlightrow {background-color:#FffFBA;}
+.sectitle {padding:0 0 6px 8px;font-weight:bold;font-size:18px;}
+
+#showchooser SELECT {font-size:12px;line-height:12px;position:relative;top:3px;}
+.taos_thm #showchooser SELECT {font-size:14px;}
+
+
+/*JQ SECTIONS - to be rounded by jquery*/
+.jqhead {background-color:#000000;text-align:left;padding:4px 8px;margin-bottom:1px;}
+.jqpanel1 {background-color:#333;color:#fff;text-align:left;padding:4px 8px;margin-bottom:1px;}
+.jqinstruction {background-color:#c1c1b1;color:#333;padding:4px 8px;margin:4px 0;font-size:10px;}
+.taos_thm .jqinstruction { font-size:12px; }
+
+.altheadbg {background-color:#666 !important;}
+.altpanelbg {background-color:#eee !important;padding-bottom:0;margin-bottom:0;}
+
+TABLE.hedtbl {font-size:16px;font-weight:bold;text-align:left;padding:2px 8px;margin-bottom:1px;}
+TABLE.hedtbl TH, TABLE.hedtbl TD {padding:0 12px;text-align:left;white-space:nowrap;vertical-align:middle;}
+TABLE.hedtbl TD {font-size:12px;padding:0 3px;}
+TABLE.hedtbl .calendarclock {margin-top:0px;}
+TABLE.hedtbl SELECT {vertical-align:50%;}
+TABLE.hedtbl LABEL, TABLE.hedtbl INPUT[type="radio"]
+	{vertical-align:baseline;font-size:12px;padding-left:12px;}
+TABLE.hedtbl INPUT[type="checkbox"] {vertical-align:bottom;}
+
+/*INVENTORY LISTING*/
+TABLE.invtbl TH, TABLE.invtbl TD {text-align:center;padding:0;}
+TABLE.invtbl TD {border-left:solid #f1f1f1 1px;}
+TABLE.invtbl TR.hdr TH {padding:6px 2px;}
+TABLE.invtbl INPUT[type="checkbox"] {vertical-align:bottom;}
+TABLE.invtbl TR.sprt TD {background-color:#f1f1f1;}
+TABLE.invtbl TR.invhed TD {background-color:#444 !important;font-weight:bold;
+	padding-top:6px;padding-bottom:6px;border-left:none;}
+TABLE.invtbl TR.invport TH {background-color:#444;}
+TABLE.invtbl TR.invport TD {background-color:#444;border-left:none;}
+
+/*Editor edit panel*/
+.jqedt {background-color:#333;text-align:left;padding:4px 8px;margin-bottom:1px;}
+.jqedt TH {font-size:14px;width:250px;padding:8px 4px;border:solid blue 0px;}
+
+/*Datalist selection - all, merch, tickets*/
+.contextselect, .matchcontextdims {line-height:20px;display:inline-block;}
+
+.contextselect .btnmed, .matchcontextdims .btnmed {margin:1px;}
+.contextselect .btnmed {font-weight:bold;text-transform:uppercase;}
+
+/*put invoiceitems on separate lines...*/
+A.descrow {display:block;}
+/*hightlight returned items*/
+.descreturned {background-color:#FFDEE0;}
+/*style for row counter*/
+.rowcounter {width:20px;color:#999;text-align:center;}
+/*for generic grid paging*/
+.pgr A {margin-right:3px;}
+
+/*search criteria - ie Customer Picker*/
+#customerpicker .criteria {color:#330000;font-size:16px;margin:8px 0;display:block;}
+#customerpicker A {line-height:18px;}
+/*grid titles...*/
+.subtitle {font-family:'lucida sans',verdana,tahoma,arial;text-align:left;vertical-align:middle;
+	font-size:14px !important;font-weight:bold;border:solid white 0;padding:0 12px;white-space:nowrap;}
+.lngtitle {font-family:'lucida sans',verdana,tahoma,arial;color:#333;text-align:left;vertical-align:middle;
+	font-size:12px !important;font-weight:bold;border:solid white 0;padding:3px 12px 6px 8px;white-space:nowrap;}
+
+.subtitle A {font-weight:bold;}
+.jqpanel1 .subtitle {padding:6px 0 3px 0;display:block;}
+/*HIGHLIGHT SELECTED ROW etc*/
+.selected, .selected TH, .selected TD {background-color:#c1c1b1 !important;}
+.selectedalt, .selectedalt TH, .selectedalt TD {background-color:#E604B7 !important;}
+
+
+.cmdsection {font-size:16px;margin:0 0 6px 12px;color:#666666;font-weight:bold;border:solid red 0px;}
+.lstempty {font-size:12px;font-weight:normal;padding:6px;}
+
+/*sets text style for entity name in editors - ie act, vendor, promoter*/
+	
+TR.altgridrow TD {background-color:#DDDACD !important;}
+
+/*USE ON GRIDS display of sales, tickets, etc - long listings*/
+.rndlsttbl {background-color:#c1c1b1;margin:3px;padding:3px;}
+TABLE.lsttbl {font-size:10px;font-family:'lucida sans',verdana,tahoma,arial;color:#333;background-color:#f1f1f1;margin-bottom:6px;}
+.taos_thm TABLE.lsttbl {font-size:14px;}
+TABLE.lsttbl TH {background-color:#333;color:#fff;padding:1px 2px;white-space:nowrap;}
+TABLE.lsttbl TD {background-color:#fff;line-height:12px;padding:1px 2px;}
+.taos_thm TABLE.lsttbl TD {line-height:normal;}
+#MerchBundle TABLE.lsttbl TD, #MerchBundle TABLE.lsttbl TD {border:solid red 0px;vertical-align:middle;}
+
+/*a standard left aligned - header diff color from td*/
+TABLE.itmtbl {font-family:'lucida sans',verdana,tahoma,arial;color:#555;background-color:Transparent;
+	border:solid #333 0px;margin-bottom:6px;}
+TR.selected TABLE.itmtbl TH {background-color:#c1c1b1 !important;padding:3px 10px;}
+TABLE.itmtbl TH {padding:0 10px;white-space:nowrap;text-align:left;}
+TABLE.itmtbl TD {background-color:#fff;padding:0 6px;text-align:left;}
+
+
+/*Orders - View*/
+TABLE.orders {background-color:#eeeeee;color:#000000;}
+TABLE.orders A {color:#000000;}
+TABLE.orders TH {white-space:nowrap;text-align:right;}
+TABLE.orders TR.editee TH, TABLE.orders TR.editee TD {background-color:#F5F0DC;} 
+TABLE.orders TR TH.contxt {text-align:left; text-transform:uppercase;background-color:#333333;font-size:15px;color:#EECE48;width:220px;}
+TABLE.orders TH, TABLE.orders TD {border:solid #999999 1px; vertical-align:middle;font-size:11px;padding:3px 3px;}
+.taos_thm TABLE.orders TH, .taos_thm TABLE.orders TD {font-size:12px;}
+TABLE.orders TH.contxt SPAN.child-of {border:solid yellow 0px;width:16px;height:16px;display:inline-block;
+	background:url('/Images/curlarrow-up-right-16.png') no-repeat;padding-right:8px;}
+TABLE.orders TH.indent1 {text-indent:65px;}
+TABLE.orders TH.indent2 {text-align:right !important;}
+
+ 
+TABLE.orders .seppy {border:none;line-height:2px;background-color:#333333;}
+
+
+
+
+#orderview TABLE.itmtbl TH, #orderview TABLE.itmtbl TD {font-size:10px;}
+.taos_thm #orderview TABLE.itmtbl TH, .taos_thm #orderview TABLE.itmtbl TD {font-size:12px;}
+#orderview .jqlisting1 {background-color:#c1c1b1;text-align:left;padding:4px 8px;margin-bottom:1px;}
+#orderview .jqlisting2 {background-color:#e1e1e1;text-align:left;padding:4px 8px;margin-bottom:1px;}
+#orderview TABLE.edtt TD {background-color:#c1e1F1;}
+
+/*option table - ticket manifest page*/
+.rndopttbl {background-color:#c1c1b1;margin:0;padding:3px;}
+TABLE.opttbl TH {font-size:11px;padding:0 8px;}
+.taos_thm TABLE.opttbl TH {font-size:12px;}
+
+/*SPECIAL CASE!*/
+/* a derivation for the show tickets listing page */
+#showsales TABLE.lsttbl TR.footer TD {border-top:solid #999 1px;text-align:center !important;}
+#showsales TABLE.lsttbl TD.jqshowsect {padding-left:6px;padding-top:6px;}
+#showsales TABLE.lsttbl TH, #showsales TABLE.lsttbl TD.jqshowsect
+	{background-color:#666;color:#fff;}
+#showsales TABLE.lsttbl TR.alternaterow TH, #showsales TABLE.lsttbl TR.alternaterow TD.jqshowsect
+	{background-color:#333;}
+
+
+
+/*EDITOR TABLE - for editing - right justified titles */
+.rndedttbl {background-color:#F5F0DC;border:solid red 0px;
+	margin:12px 6px 12px 3px;padding:12px 32px 12px 12px;display:block;}
+#listingtickets .rndedttbl, #inventorymerch .rndedttbl {margin:3px 0 0 0;padding:3px;}
+
+TABLE.edttbl {font-family:'lucida sans',verdana,tahoma,arial;color:#333;background-color:#F5F0DC;
+	font-size:10px;border-collapse:collapse;}
+TABLE.edttbl TH {color:#666;text-align:right;font-weight:bold;font-size:11px;
+	white-space:nowrap;padding:3px 12px 3px 3px;}
+.taos_thm TABLE.edttbl, .taos_thm TABLE.edttbl TH, .taos_thm TABLE.edttbl TD { font-size:12px; }
+
+TABLE.edttbl TD {text-align:left;padding:3px;font-size:10px;line-height:11px;}
+TABLE.edttbl SPAN.btncolspc {width:100px;background-color:Blue;border:solid red 2px;}
+/*The intention is for this to style ddls*/
+.edttbl LABEL {margin:0 24px 0 0;Text-transform:uppercase;font-weight:bold;}
+
+#monthlycharges TABLE.edttbl TH {background-color:#666;color:#fff;}
+#monthlycharges .jqhead TH {background-color:Transparent !important;}
+
+
+/*Editors need to get smaller too*/
+/*Orders view needs more real estate*/
+/*Customer editor has different reqs - cust editor needs rework - something is throwing off the scheme of things 091121*/
+#edituser TABLE.edttbl TH {font-size:10px;padding:3px 6px;background-color:#c1c1b1;}
+.taos_thm #edituser TABLE.edttbl TH { font-size:12px; }
+#edituser TABLE.edttbl TD {padding:3px 6px;}
+#adminprofile H4 {font-size:14px;margin-bottom:6px;} 
+
+
+
+/*rounding table need less padding*/
+#edituser .jqedt {margin:0 0 6px 0;padding:3px;border:solid blue 0px;}
+
+#edituser .jqedt TABLE TH.subtitle, #orderview .jqedt TABLE TH.subtitle {padding:0 0 12px 12px;vertical-align:top;}
+#srceditor TABLE.edttbl TD {vertical-align:middle !important;}
+#srceditor .rndedttbl,
+#edituser .rndedttbl, #orderview .rndedttbl {margin:0 3px 6px 6px;padding:4px;border:solid red 0px;}
+
+#orderview TABLE.shpng TD, #orderview TABLE.shpng TH {vertical-align:top;border:solid #999 1px;}
+#orderview .hilit {background-color:#333;color:#F5F0DC;border:solid #F5F0DC 1px;padding:4px;
+	width:100px;display:inline-block;text-align:center;}
+#orderview DIV.bundle {background-color:#608FC4;}
+
+/*Mail subscriptions on customer info page*/
+#edituser .usersubscription .controlheader {border:solid blue 0px;background-color:#333;
+	font-size:14px;font-weight:bold;padding:8px;margin:-4px -6px 0px -6px;}
+/*#edituser .usersubscription {border:solid red 1px;width:100%;}
+#edituser .usersubscription TABLE {border:solid red 1px;width:100%;}*/
+#edituser .usersubscription .controlheader .links A {padding-left:20px;float:right;}
+UL, LI { list-style-type:none;}
+#edituser .usersubscription .subscriptionlistitem {display:inline;padding-left:4px;font-weight:bold;text-transform:uppercase;}
+#edituser #adminprofile .membersince {border:solid red 0px;position:relative;top:-12px;}
+#edituser .usersubscription .subscriptiondescription {color:#666;margin:0 3px 3px 14px;}
+
+/*END CUSTOMER EDITOR*/
+
+/*BUTTONS*/
+/*INPUT.btn {width:120px;height:24px;vertical-align:4px;margin-left:32px;color:#333;font-size:12px;cursor:pointer;}*/
+
+/*med is good for editors*/
+
+INPUT.btnmed {width:56px;height:22px;line-height:14px;vertical-align:4px;margin:0 6px 0 3px;color:#333;font-size:10px;font-weight:bold;cursor:pointer;}
+.taos_thm INPUT.btnmed {width:64px;font-size:12px;}
+#srceditor .sidbar TD {padding:0 8px 2px 8px;border:solid red 0px;vertical-align:top;}
+#srceditor .sidbar {margin-right:8px;}
+#srceditor .jqpanel1 TABLE TD {vertical-align:top;}
+
+
+
+/*110410 Added report table*/
+TABLE.rpttable {font-size:13px;width:100%;margin:0;}
+
+TABLE.rpttable TH, TABLE.rpttable TD {vertical-align:top;padding: 0 12px 0 0;}
+TABLE.rpttable H2 {padding:4px 0 8px 12px;}
+TABLE.rpttable H4 {background-color:#333333;padding-left:8px;margin-bottom:4px;color:#EECE48;}
+TABLE.rpttable TH {white-space:nowrap;text-align:left;padding-left:8px;}
+TABLE.rpttable TD.rptseparator {line-height:8px;}
+
+TABLE.rpttable TR > TH + TD, 
+TABLE.rpttable TR > TH + TD + TD {border:solid #999999 1px;white-space:nowrap;width:120px;text-align:right;
+	font-size:12px;font-weight:bold;line-height:20px;
+	padding-right:2px;padding-left:32px;}
+TABLE.rpttable TR > TH + TD + TD + TD {padding-left:12px;font-size:10px;color:#666666;width:100%;vertical-align:middle;}
+.taos_thm TABLE.rpttable, .taos_thm TABLE.rpttable TR > TH + TD, 
+.taos_thm TABLE.rpttable TR > TH + TD + TD {font-size:16px;}
+.taos_thm TABLE.rpttable TR > TH + TD + TD + TD {font-size:14px;}
+
+
+/*101028 LAYOUT*/
+
+/*entity is the main outline on the page
+darkblue    #013388 
+paleblue    #EAf2FF
+greyblue    #748EB9
+*/
+.modalBackground { background-color:#748EB9; filter:alpha(opacity=80); opacity:0.8; }
+
+TR.main-item, TR.main-item TH, TR.main-item TD {background-color:#c1c1b1;color:Black;line-height:14px;padding:0;vertical-align:middle;}
+TD.inv-item {border:solid red 0px;padding:2px 0 0 48px;}
+
+/*modal popup editor*/
+.modal-control INPUT {margin-left:32px;}/*spacing for control buttons*/
+
+.popuptable {margin-bottom:24px;}
+.popuptable TH {padding-top:12px;text-align:right;padding-right:12px;color:#013388;}
+.popuptable TD {padding-top:12px;}
+TR.instruct TD {color:#4183F4;font-size:10px;line-height:8px;padding-top:4px;}
+.taos_thm TR.instruct TD {font-size:12px; }
+
+.modal-section .btn-cancel {background: url(/Images/cancel-32.png) no-repeat;width:80px;}
+
+
+/*buttons and links */
+.btn-up, .btn-down, .btn-delete, .btn-edit, .btn-save, .btn-cancel, .btn-select, .btn-addnew {width:24px;height:24px;margin:0 4px;cursor:pointer;}
+.btn-up {background: url(/Images/arw-ups-blu-24.png) no-repeat;}
+.btn-down {background: url(/Images/arw-downs-blu-24.png) no-repeat;}
+.btn-delete {background: url(/Images/recycle_bins-24.png) no-repeat;}
+.btn-addnew {background: url(/Images/pluss-24.png) no-repeat;}
+.btn-edit {background: url(/Images/pencils-24.png) no-repeat;}
+.btn-save {background: url(/Images/check-okg-24.png) no-repeat;width:60px;}
+.btn-cancel {background: url(/Images/cross-24.png) no-repeat;}
+.btn-select {background: url(/Images/button_blue_recs-24.png) no-repeat;}
+
+/*selected row*/
+.choice .btn-select {background: url(/Images/button_black_recs-24.png) no-repeat;}
+.choice, .choice TH, .choice TD{background-color:#F1F0E2;}
+
+
+
+/*END 101028 LAYOUT*/
+
+INPUT.btntny {height:18px;line-height:11px;vertical-align:1px;margin:0 4px;color:#333;font-size:9px;
+	cursor:pointer;text-transform:capitalize;width:auto;padding:0 6px;}
+.taos_thm INPUT.btntny { font-size:10px; }
+.btnselect {background: url(/Images/GoB.gif) no-repeat;width:20px;height:20px;margin:0 12px;cursor:pointer;padding:0;}
+.btnselection {background: url(/Images/GoB.gif) no-repeat -2px;width:20px;height:20px;margin:0 12px;cursor:pointer;padding:0;}
+.btnedit {background: url(/Images/Edit.gif) no-repeat;width:20px;height:20px;margin:0 12px;cursor:pointer;padding:0;}
+.btnnew {background: url(/Images/New.gif) no-repeat;width:20px;height:20px;margin:0 12px;cursor:pointer;padding:0;}
+.btnup {background: url(/Images/up_arrow_org.png) no-repeat;width:20px;height:20px;margin:0 6px;cursor:pointer;}
+.btndown {background: url(/Images/down_arrow_org.png) no-repeat;width:20px;height:20px;margin:0 6px;cursor:pointer;}
+.btnord {font-size:14px;line-height:14px;text-decoration:none;margin:0 8px 3px 8px;cursor:pointer;border:inset #f1f1f1 2px;
+	background-color:#333;color:#ccc;}
+.btndelete {background: url(/Images/recycle_bin-24.png) no-repeat;width:24px;height:24px;margin:0 12px;cursor:pointer;padding:0;text-indent:-8000px;}
+/*extra padding for separation*/
+.lastinrow {margin:0 64px 0 32px;}
+
+/*CALENDARCLOCK CONTROL*/
+.calendarclock {border:solid red 0px;margin-top:2px;}
+.calendarclock TABLE {border:none silver 0px;}
+.calendarclock TABLE TD INPUT.txtbox {float:left;margin:0 2px 0 0;padding:0;height:16px;vertical-align:middle;}
+body.ie6 .calendarclock TABLE TD INPUT.txtbox, body.ie7 .calendarclock TABLE TD INPUT.txtbox {height:14px;}
+.calendarclock TABLE TD INPUT.calbtn {float:left;background:url(/Images/Calendar_18x18.jpg) no-repeat;text-indent:-9999px;
+	width:18px;height:18px;border:none;outline:none;cursor:pointer;}
+/*time portion*/
+.calendarclock .timepart {white-space:nowrap;}
+
+
+/*GOOGLEPAGER CONTROL*/
+.googlepagercontainer {text-align:right;padding:4px 0;background-color:#333;margin-bottom:3px;}
+.googlepager {display:inline-block;font-size:10px;padding:0 14px 0 24px;vertical-align:top;}
+.googlepager STRONG {font-size:11px;margin:0 2px 0 12px;}              
+.googlepager SELECT {font-size:10px !important;font-weight:normal !important;height:16px !important;}
+.googlepager .ggllinks INPUT {background-color:Transparent;border:none;
+	font-size:12px;line-height:12px;vertical-align:0;font-weight:normal;cursor:pointer;}
+.googlepager .ggllinks INPUT:hover {text-decoration:underline;font-weight:bold;background-color:Red;}
+.googlepager INPUT.selectedpage {background-color:#aaa;text-decoration:underline;font-weight:bold;}
+/*prev and next, etc*/
+.googlepager INPUT.disabled {color:#ccc;}
+.pager-title 
+{
+	float:left;
+	border:solid white 0px;
+	display:inline;
+	color:#EECE48;
+	font-weight:bold;
+	font-size:20px; 
+	line-height:18px;   
+	margin-left:16px;
+}
+.googlepagercontainer .ggl-template
+{
+	float:left;
+	margin-left:24px;
+	vertical-align:middle;
+	line-height:20px;
+}
+.taos_thm .googlepager {font-size:14px;}
+.taos_thm .googlepager STRONG {font-size:14px;}
+.taos_thm .googlepager SELECT {font-size:14px !important;}
+
+/*PRINT TICKET LIST*/
+#printtickets TABLE.tiks { width: 100%; background-color: #cccccc; }
+#printtickets .tickets .header, #printtickets .tiks .header { font-weight: bold; font-size: 1.2em; text-align: left; }
+#printtickets TABLE.sales TD.pickup { white-space: nowrap; }
+#printtickets TD.allot, #printtickets TD.pend, #printtickets TD.sold, #printtickets TD.avail 
+	{ width: 100px; text-align: center; }
+#printtickets TH { white-space: nowrap; }
+#printtickets .sales TR.saleheader { background-color: #e1e1e1; border-bottom: solid black 1px; }	
+TR.saleheader TD { border-bottom: solid black 1px; }	
+#printtickets .sales TABLE { border: none; }
+#printtickets .sales TD { border-bottom: solid #ccc 1px; border-collapse: collapse; }
+
+/*LEGACY MERCH PICKER*/
+/*merch listing*/
+#merchpicker UL {border:solid green 0px;color:#333;}
+#merchpicker IMG.menueye {height:20px;width:20px;vertical-align: middle;}
+#merchpicker UL.header {border:solid silver 1px;float:left;width:175px;font-size:16px;font-weight:bold;margin:0 8px 8px 0;padding:4px;}
+#merchpicker LI {font-size:10px;font-weight:normal;margin-bottom:2px;}
+.taos_thm #merchpicker LI {font-size:12px; }
+#merchpicker UL UL, UL LI.subheader {margin:4px 0 0 8px;}
+#merchpicker LI.subheader {font-size:12px;font-weight:bold;}
+
+
+/*JCROP CONTROL*/
+/* Fixes issue here http://code.google.com/p/jcrop/issues/detail?id=1 */
+.jcrop-holder{text-align:left;}
+.jcrop-vline,.jcrop-hline{font-size:0;position:absolute;background:white url('/Images/Jcrop.gif') top left repeat;}
+.jcrop-vline{height:100%;width:1px !important;}
+.jcrop-hline{width:100%;height:1px !important;}
+.jcrop-handle{font-size:1px;width:7px !important;height:7px !important;border:1px #eee solid;background-color:#333;
+	*width:9px;*height:9px;}
+.jcrop-tracker{width:100%;height:100%;}
+.custom.jcrop-vline,
+.custom.jcrop-hline{background:yellow;}
+.custom.jcrop-handle{border-color:black;background-color:#C7BB00;-moz-border-radius:3px;-webkit-border-radius:3px;}
+
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/skeleton.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#navskl, 
+#navskl ul {padding:0; margin:0; list-style:none; font: 13px Tahoma,arial,sans-serif bold; 
+	border:0px solid #fff;
+	position:relative; z-index:200;
+}
+	
+#navskl li.mnudiv {margin:0 6px 0 4px;line-height:24px;letter-spacing:normal;}
+	
+#navskl {height:25px; padding:0;}
+
+#navskl .sectitle {text-transform:uppercase;}
+
+#merchselection IMG, #navskl IMG 
+	{width:24px;height:24px;vertical-align:middle;margin-right:12px;border:solid #777 1px;}
+
+
+#navskl li {float:left;font-size:13px !important;font-weight:bold;}/*main menu headings*/
+#navskl li li {float:none; background:#444;padding:6px 3px 12px 3px;white-space:nowrap;
+	border:solid white 0px;}
+/* a hack for IE5.x and IE6 */
+* html #navskl li li {float:left;}
+
+#navskl li a {display:block; float:left;margin:0 16px 0 8px; 
+	line-height:24px; text-decoration:none; white-space:nowrap;}
+	
+	
+#navskl li li a {height:20px; line-height:20px; float:none;}
+
+
+#navskl li:hover {position:relative; z-index:300;}
+#navskl li:hover ul {left:0; top:24px;padding:0;}/*box surrounding sub menus*/
+/* another hack for IE5.5 and IE6 */
+* html #navskl li:hover ul {left:10px;border:solid red 0px;padding:0;}
+
+#navskl ul {position:absolute; left:-9999px; top:-9999px;}
+/* yet another hack for IE5.x and IE6 */
+* html #navskl ul {width:1px;}
+
+/* it could have been this simple if all browsers understood */
+/* show next level */
+#navskl li:hover li:hover > ul {left:-15px; margin-left:100%; top:-1px;}
+/* keep further levels hidden */
+#navskl li:hover > ul ul {position:absolute; left:-9999px; top:-9999px; width:auto;}
+/* show path followed */
+#navskl li:hover > a {text-decoration:underline; color:#fff;font-weight:bold;}
+
+
+/* but IE5.x and IE6 need this lot to style the flyouts and path followed */
+/* show next level */
+#navskl li:hover li:hover ul,
+#navskl li:hover li:hover li:hover ul,
+#navskl li:hover li:hover li:hover li:hover ul,
+#navskl li:hover li:hover li:hover li:hover li:hover ul
+{left:-15px; margin-left:100%; top:-1px;}
+
+/* keep further levels hidden */
+#navskl li:hover ul ul,
+#navskl li:hover li:hover ul ul,
+#navskl li:hover li:hover li:hover ul ul,
+#navskl li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px;}
+
+/* show path followed */
+#navskl li:hover a,
+#navskl li:hover li:hover a,
+#navskl li:hover li:hover li:hover a,
+#navskl li:hover li:hover li:hover li:hover a,
+#navskl li:hover li:hover li:hover li:hover li:hover a,
+#navskl li:hover li:hover li:hover li:hover li:hover li:hover a
+{text-decoration:underline;font-weight:normal;}
+
+/* hide futher possible paths */
+#navskl li:hover li a,
+#navskl li:hover li:hover li a,
+#navskl li:hover li:hover li:hover li a,
+#navskl li:hover li:hover li:hover li:hover li a,
+#navskl li:hover li:hover li:hover li:hover li:hover li a
+{text-decoration:none;}
+
+#navskl li:hover li:hover ul {overflow-y:scroll;max-height:400px;}

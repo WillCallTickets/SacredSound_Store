@@ -1,0 +1,82 @@
+﻿.rounded {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    behavior: url(/Styles/PIE.htc);
+}    
+.roundtop {
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    padding: 2px 2px 0 0;
+    behavior: url(/Styles/PIE.htc);
+}
+.roundtopleft {
+    -webkit-border-radius: 8px 0 0 0;
+    -moz-border-radius: 8px 0 0 0;
+    border-radius: 8px 0 0 0;
+    padding: 2px 2px 0 0;
+    behavior: url(/Styles/PIE.htc);
+}
+.roundtopright {
+    -webkit-border-radius: 0 8px 0 0;
+    -moz-border-radius: 0 8px 0 0;
+    border-radius: 0 8px 0 0;
+    padding: 2px 0 0 2px;
+    behavior: url(/Styles/PIE.htc);
+}
+.roundbotleft {
+    -webkit-border-radius: 0 0 8px 0;
+    -moz-border-radius: 0 0 8px 0;
+    border-radius: 0 0 8px 0;
+    padding: 0 2px 2px 0;
+    behavior: url(/Styles/PIE.htc);
+}
+.roundleft {
+    -webkit-border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
+    padding: 2px 0 2px 2px;
+    behavior: url(/Styles/PIE.htc);
+}
+.roundright {
+    -webkit-border-radius: 0 8px 8px 0;
+    -moz-border-radius: 0 8px 8px 0;
+    border-radius: 0 8px 8px 0;
+    padding: 2px 2px 2px 0;
+    behavior: url(/Styles/PIE.htc);
+}
+.roundbotright {
+    -webkit-border-radius: 0 0 0 8px;
+    -moz-border-radius: 0 0 0 8px;
+    border-radius: 0 0 0 8px;
+    padding: 0 0 2px 2px;
+    behavior: url(/Styles/PIE.htc);
+}
+.roundbot {
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    padding: 0 0 2px 2px;
+    behavior: url(/Styles/PIE.htc);
+}
+.dropped {
+    -webkit-box-shadow: #333 0 0 6px;
+    -moz-box-shadow: #333 0 0 6px;
+    box-shadow: #333 0 0 6px;
+    behavior: url(/Styles/PIE.php);
+}
+/*offset blur-distance */
+.drop-right-bottom {
+    -webkit-box-shadow: #333 4px 4px 8px;
+    -moz-box-shadow: #333 4px 4px 8px;
+    box-shadow: #333 4px 4px 8px;
+    behavior: url(/Styles/PIE.php);
+}
+.drop-txt {
+    -webkit-text-shadow: #444 2px 2px 4px;
+    -moz-text-shadow: #444 2px 2px 4px;
+    text-shadow: #444 2px 2px 4px;
+    filter: DropShadow(Color=#666666, offx=2, offy=2);
+    behavior: url(/Styles/PIE.php);
+}

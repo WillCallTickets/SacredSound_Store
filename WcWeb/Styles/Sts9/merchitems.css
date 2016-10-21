@@ -1,0 +1,155 @@
+﻿
+
+
+#complianceoverlay 
+{
+    border:solid #999999 1px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 50px #ccc;
+    padding:18px;
+    background-color:#222222;
+    }
+    
+#complianceoverlay A.top-panel-close 
+{
+    display:block;
+    position:absolute;
+    width:36px;height:36px;
+    right:-8px;top:-8px;
+    margin:0;text-indent:-8000px;
+    background: url('/Images/Close.png') no-repeat; } 
+
+#complianceoverlay A.bottom-panel-close 
+{
+    background-color:#cccccc;
+    color:#222222;
+    font-weight:bold;
+    display:inline-block;    
+    padding:6px 12px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius: 2px;    
+}
+  
+
+/*
+.modal {
+    background-color:#fff;
+    display:none;
+    width:350px;
+    padding:15px;
+    text-align:left;
+    border:2px solid #333;
+ 
+    opacity:0.8;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+  }
+ 
+  .modal h2 {
+    background:url(/media/img/global/info.png) 0 50% no-repeat;
+    margin:0px;
+    padding:10px 0 10px 45px;
+    border-bottom:1px solid #333;
+    font-size:20px;
+  }
+*/
+
+
+/*templates*/
+.legacy {}
+.threecolumn {}
+.controlsaboverichtext {}
+.controlsbelowrichtext {}
+.controlstorightofdescription {}
+.controlstoleftofdescription {}
+
+/* MERCH ITEM */
+#merch-wrapper {border:solid red 0px;}
+
+/*HEADERS*/
+#headers {border:solid blue 0px;}
+
+.no-inventory, .merch-promo-wrapper, .special-instructions, .postpurchase 
+{border:solid #cccccc 1px;font-size:12px;padding:8px;margin-bottom:12px;}
+
+.no-inventory {border-color:red;background-color:#fEE6e6;color:Red;}
+.merch-promo-wrapper {border-color:#999999;background-color:#666666;color:#ffffff;}
+.merch-promo {}
+
+.merch-header {background-color:#333333;}/*derived from title;*/
+.merch-header-text {font-size:18px;}
+
+.special-instructions {border-color:#aaaaaa;background-color:#dfdfdf;color:#333333;}
+
+.postpurchase {border-color:#cccccc;background-color:#f1f1f1;color:#666666;}
+.pptext {}
+/*END HEADERS*/
+
+#merch-container {border:solid yellow 0px;}
+
+TABLE.merch-table {border:solid purple 0px;font-size:12px;width:100%;}
+TABLE.merch-table TD {border:solid red 0px;padding:12px;}
+
+#choosemerch TD.iteminfo {width:440px;}
+#choosemerch .legacy TD.iteminfo {width:50%;text-align:left;}
+#choosemerch TD.cartaction {width:240px;text-align:center;}
+#choosemerch .legacy TD.cartaction {width:50%;}
+#choosemerch TD.cartaction SELECT {display:block;margin:0 auto 8px auto;width:100%;}
+
+TABLE.merch-table TD.itemdesc {}
+SPAN.description-wrapper {display:block; border:solid #cccccc 1px; background-color:#f1f1f1;color:#333333; padding:12px;}
+SPAN.description-wrapper SPAN.item-desc {}
+SPAN.description-wrapper SPAN.item-desc IMG {padding:0 12px 12px 12px;}
+
+#choosemerch TD.cartaction SPAN.description-wrapper { margin-bottom:16px; }
+
+.merch-pics {margin-top:12px;}
+
+/*basic pricing*/
+#choosemerch SPAN.pricepanel {display:block;margin-top:16px;margin-bottom:16px;font-size:14px;}
+#choosemerch TD.iteminfo SPAN.pricepanel {margin-top:0;}
+#choosemerch SPAN.pricepanel SPAN {display:block;margin-bottom:4px;}
+#choosemerch .originalprice {text-decoration:line-through;}
+#choosemerch .saveprice {}
+#choosemerch SPAN.pricepanel SPAN.saleprice {font-size:18px;font-weight:bold;}
+#choosemerch SPAN.pricepanel SPAN.saleprice SPAN {display:inline;}
+
+/*this link is also a btntribe */
+#choosemerch TD.cartaction A.view-detail {display:inline-block;margin-bottom:18px;color:#000000;background-color:transparent;text-decoration:underline;}
+#choosemerch TD.cartaction A.view-detail:HOVER {color:#ffffff;background-color:#000000;}
+
+#choosemerch DIV.action {}
+#choosemerch DIV.itemattrib {}
+#choosemerch #currentselection {display:block;font-weight:bold;padding-bottom:12px;}
+#choosemerch #addtocartregion {text-align: center; margin: 12px 0 4px 0; height: 32px;}
+#choosemerch #addtocartselector A.btntribe {}
+
+#detailedimage TR.pagelink TABLE TD {border:solid blue 0px;padding:8px;}
+#detailedimage A {text-decoration:underline;}
+
+#detailedimage { text-align: center; padding: 0; }
+#detailedimage TABLE { border: none red 1px; text-align: center;  }
+#detailedimage .detaildescription { border: none 1px white; margin: 12px 0; font-weight: bold; font-size: 1.2em; color: White; }
+
+/* Category */
+/*#choosemerch FIELDSET.category { width: 100%; margin-bottom: 40px; }*/
+#choosemerch .merch-container { border-bottom:1px dashed #cccccc;margin:0 3% 15px;padding:3%;width:88%;}
+#choosemerch .merch-container .name { border: none blue 1px; font-size: 1.4em; font-weight: bold; display: inline; }
+A.btnhi_res { display: inline; vertical-align: 15%; margin: 2px 0 2px 12px; 
+	padding: 2px 4px; background-color: #cccccc; font-weight: bold; text-transform: lowercase; }
+A.btnhi_res:HOVER {color:#ffffff;background-color:#000000;}
+#choosemerch .merch-container .name A:HOVER {color:#ffffff;background-color:#000000;}
+
+#choosemerch .merch-container .merchheader { border: none blue 1px; display: block; margin-bottom: 1em; vertical-align: middle; }
+#choosemerch .merch-container .onsalenow { font-size: 1.4em; font-weight: bold; display: inline; margin-left: 1em; color: #000000; }
+#choosemerch .merch-container .shorttext { border: none green 1px; font-size: 1em; margin-left: 1em; }
+#choosemerch .merch-container .picsection { border: none teal 1px; vertical-align: top; }
+#choosemerch .merch-container .picsection IMG { border: none purple 1px; margin-right: 1em; }
+

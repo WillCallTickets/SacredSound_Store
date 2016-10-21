@@ -1,0 +1,97 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Template.master.cs" Inherits="WillCallWeb.TemplateMaster" %>
+<%@ Register Src="Controls/HeaderBar.ascx" TagName="HeaderBar" TagPrefix="uc1" %>
+<%@ Register src="Controls/NavMain.ascx" tagname="NavMain" tagprefix="uc7" %>
+<%@ Register Src="Controls/Banner.ascx" TagName="Banner" TagPrefix="uc2" %>
+<%@ Register src="Components/Util/HeaderImageDisplay.ascx" tagname="HeaderImageDisplay" tagprefix="uc3" %>
+
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:og="http://opengraphprotocol.org/schema/"
+    xmlns:fb="http://www.facebook.com/2008/fbml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title></title>
+
+    <script type="text/javascript" src="/Includes/GeneralJava.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/WillCallResources/Images/UI/favicon.ico" />
+        
+    <asp:Literal ID="litGoogleAnalytics" runat="server"></asp:Literal>
+</head>
+<body>
+<div id="fb-root"></div>
+<div id="bumperbar">
+<div id="bumper-inner"></div>
+<form id="Main" runat="server">    
+    <asp:ScriptManager ID="ScriptManager1" EnablePartialRendering="true" runat="server" ScriptMode="Release"></asp:ScriptManager>    
+    <div id="page">
+
+        <div id="headsection">
+            <div id="masthead">
+                <uc1:HeaderBar ID="HeaderBar1" runat="server" />
+                <asp:Literal ID="LiteralHomelink" runat="server" />
+                <uc3:HeaderImageDisplay ID="HeaderImageDisplay1" runat="server" />                
+                <uc7:NavMain ID="NavMain1" runat="server" />
+            </div>
+        </div>
+    
+        <div id="lowercontent">
+
+            <table id="maintable" cellpadding="0" cellspacing="0" style="width: 100%;">
+                <tr>
+                    <td style="width: 256px;">
+                        <div id="sidecontent" >
+                            <asp:ContentPlaceHolder ID="SideContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="validationmain">
+                            <asp:CustomValidator ID="RemovalValidator" Display="Static" runat="server" Text="*" 
+                                CssClass="invisible"></asp:CustomValidator>
+                            <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="validationsummary" 
+                                HeaderText="" />
+                        </div>
+                        <div id="maincontent">                            
+                            <div id="centercontent">
+                                <uc2:Banner ID="Banner1" runat="server" />
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div id="footerlinks">
+                <a href="/Contact.aspx">Contact Us</a><a href="/Store/About.aspx?p=privacy">Privacy Statement</a><a href="/Store/About.aspx?p=terms">Terms &amp; Conditions</a>                
+            </div>
+        <%if (this.Page.ToString().ToLower() != "asp.store_checkout_aspx" && this.Page.ToString().ToLower() != "asp.store_shipping_aspx"){%>
+            <div id="footer"></div><%} %>
+        </div>
+   </div><!--page-->
+
+   <!-- cycle -->
+   <%if (this.HeaderImageDisplay1.HasControls()){%>
+        <script type="text/javascript" src="/JQueryUI/jquery.cycle.all.min.js"></script>
+        <script type="text/javascript" src="/JQueryUI/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="/JQueryUI/jquery.easing.compatibility.js"></script>
+        <script type="text/javascript" src="/JQueryUI/wctCycle.js"></script>
+    <%} %>
+
+    <%
+        if (this.Page.ToString().ToLower().IndexOf("asp.store_choosemerch_aspx") != -1 && this.Page.Request.RawUrl.ToLower().IndexOf("?mite=") != -1)
+     {%>        
+        <script type="text/javascript" src="/JQueryUI/jquery.tools-110511.all.min.js"></script>
+        <script type="text/javascript" src="/JQueryUI/cluetip.js"></script>        
+    <%}
+        else if (this.Page.ToString().ToLower().IndexOf("asp.store_cart_edit_aspx") != -1)
+        {%>
+        <script type="text/javascript" src="/JQueryUI/jquery.tools-110511.all.min.js"></script>
+        <script type="text/javascript" src="/JQueryUI/appleoverlay.js"></script>
+    <%} %>
+
+</form>
+   </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TemplateAdmin.master.cs" Inherits="WillCallWeb.TemplateAdmin" %>
+<%@ Register Src="Controls/HeaderBar.ascx" TagName="HeaderBar" TagPrefix="uc1" %>
+<%@ Register src="Controls/NavMain.ascx" tagname="NavMain" tagprefix="uc7" %>
+<%@ Register Src="Admin/AdminControls/Menu_Admin.ascx" TagName="Menu_Admin" TagPrefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="http://www.facebook.com/2008/fbml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title></title>
+    <script language="javascript" src="/Includes/GeneralJava.js" type="text/javascript"></script>
+
+    <link href="/Styles/SiteStyle.css" type="text/css" rel="StyleSheet" />
+
+
+    <link href="assets/styles/admin.jqueryui.1.8.2.min.css" rel="stylesheet" type="text/css"/>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/JQueryUI/jquery.tools-110511.all.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/JQueryUI/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/JQueryUI/jquery-bbq-1.2.1.js"></script>
+
+</head>
+
+<body id="adminbody" runat="server">
+<div id="fb-root"></div>
+<div id="settheme" runat="server">
+<div id="adminbg"></div>
+
+<form id="Main" runat="server" >
+    <asp:ScriptManager ID="ScriptManager1" EnablePartialRendering="true" runat="server" ScriptMode="Release"></asp:ScriptManager>
+    <div id="admin">
+        <div id="headsection">
+            <div id="masthead">
+                <div id="adminlogo"></div>
+                <uc1:HeaderBar ID="HeaderBar1" runat="server" />
+                <uc7:NavMain ID="NavMain1" runat="server" />
+            </div>
+         </div>
+        <div id="lowercontent">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td rowspan="99" class="leftsection">
+                        <uc3:Menu_Admin ID="Menu_Admin1" runat="server" />
+                    </td>
+                    <td class="maincontent" style="width: 100%;">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr height="100%" valign="bottom">
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+   </div>
+   
+
+
+   <script type="text/javascript" src="/JQueryUI/jquery.Jcrop.min.js"></script>
+   <script type="text/javascript" src="/JQueryUI/jquery.blockUI.min.js"></script>
+   <script type="text/javascript" src="/JQueryUI/stuHover.js"></script>
+   <script type="text/javascript" src="/JQueryUI/ddaccordion.js"></script>
+   <script type="text/javascript" src="/JQueryUI/printhardticket.js"></script>
+   <script type="text/javascript" src="/JQueryUI/adminFunctions.js"></script>
+
+
+</form>
+</div>
+</body>
+</html>

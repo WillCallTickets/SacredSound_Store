@@ -1,0 +1,382 @@
+﻿@import url('/styles/reset.css');
+
+/*html { 
+	background: url(/WillCallResources/Images/UI/sts9-lgbg-grey.png) no-repeat center -10px fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/
+
+body { color:#000000; font: 70% Arial, Helvetica, Geneva, sans-serif; 
+	  border-top:solid #000000 40px;
+	  
+	  } 
+body#image-popup-page {border-top:none #000000 0px;}
+
+#bumperbar {position:relative;top:-40px;}
+body#blank {background:none;border-top:none;}
+body#printpage{background:none;border-top:none;}
+body#printpage legend { display: inline; vertical-align: middle; }
+body#processing {border-top:none;}
+
+#checkout .pagemessage {color:red;font-size:18px;font-weight:bold;}
+.pagemessage { font-size: 14px; margin-bottom: 12px; }
+
+.credit-status {margin: 12px 0; }
+
+.pendingbundle {color:Red;font-weight:bold;font-size:18px;display:block;margin:24px 0;}
+
+a { color: #000000; text-decoration: none;  }
+ul { border: none green 1px; list-style: none; list-style-type: none;  }
+
+hr { color: #000000; }
+hr.separator { border:none;border-bottom:dashed #cccccc 1px;clear:both;height:1px; }
+
+.validationsummary { clear: both; border: solid red 2px; color: red; font-weight: bold; padding: 12px;margin-bottom:24px; } 
+.validationsummary A {text-decoration:underline;}
+
+#processing DIV.legend {height:120px;}
+#processing H1 {margin: 48px 48px 48px 32px;font-size:24px;}
+.willcall-note {font-weight:bold;color:Red;}
+
+TR.selected { font-weight: bold; color: Black; background-color: #cccccc; }
+TD {vertical-align: top;}
+TABLE.crewtable TH { background-color: #000000; color: #ffffff; text-align: left; padding: 2px; font-size: 12px; font-weight: bold; vertical-align: middle; }
+
+.invisible { border: none purple 1px; display: none; width: 0; height: 0; }
+.clear { clear: both; }
+.clearleft { clear: left; }
+.clearright { clear: right; }
+.nowrap { white-space: nowrap; }
+.expired { color: Red; }
+
+.cookiewarning { background-color: #f1f1f1; padding: 8px; margin: 4px;font-size: 12px;} 
+.cookiewarning .title { color: #000000; font-weight: bold; font-size: 14px; }
+
+/*note that the letter spacing throws the padding off*/
+A.btntribe:LINK, A.btntribe:VISITED, #footerlinks A,
+.userlinks A {display: inline; padding: 0 4px; width: 160px; 
+	font-size: 17px; line-height: 31px; letter-spacing: -1px; text-transform: lowercase; 
+	font-weight: bold;text-align: center; border: 0; text-decoration: none; 
+	white-space: pre;color: #000000;background-color: #cccccc;} 
+
+#footerlinks A:HOVER, #useraccount .userlinks A:HOVER,
+A.btntribe:HOVER {color: #ffffff;background-color: #000000;}
+#footerlinks A:ACTIVE, #useraccount .userlinks A:ACTIVE,
+A.btntribe:ACTIVE {color: #000000;background-color: #cccccc;} 
+
+#addtocartselector .btntribe { font-size: 22px; }
+.buylink A.btntribe {border:solid black 0px;display:inline-block;width:90px;line-height:20px;}
+.tktgofast {}
+
+
+#page {border:solid green 0;width:1000px;margin:0 auto;}
+
+#footerlinks { 
+	text-align:center;width:1000px;margin:30px auto;padding-top:60px;
+	background: url('/WillCallResources/Images/UI/sts9_logo_footer.jpg') no-repeat top center;border:none;}
+#footerlinks A {margin:0 16px;padding:4px;}
+
+
+#headsection {border:solid blue 0px;}
+#masthead {border:solid red 0px;}
+#headerbar {border:none;background-color:#000;float: left;width: 100%;height:40px;
+	font-weight:bold;font-size: 15px;line-height: 24px;text-align:right;}
+
+A#homelink {border:solid red 0px;display:block;width:467px;height:171px;line-height:171px;
+	float:left;z-index:1000;position:relative;cursor:pointer;cursor:hand;
+	background:transparent url(/WillCallResources/Images/UI/header_logo.png) no-repeat top left;}
+	
+	
+
+.cartsmall {border:solid purple 0px;float:left;padding-left:32px;margin-top:8px;
+	width:30%;color:#ffffff;text-align:left;
+	background:url(/WillCallResources/Images/UI/carttw.png) no-repeat scroll left center;
+	_background:none;/*ie6*/
+}
+.cartfunction {border:solid purple 0px;margin-left:8px;}
+.cartsmall A {color:#ffffff;cursor:pointer;}
+.cartsmall .cartfunction A {display:inline;font-size:11px;line-height:24px;
+	margin-top:0;background-color:transparent;
+	font-style:oblique;letter-spacing: normal; 
+	text-transform: lowercase;color:#ffffff;}
+.cartsmall .cartfunction A:HOVER { background-color:#cccccc;color:#000000;}
+	
+#loginsmall {border:solid yellow 0px;position:relative;}    
+#loginsmall DIV.functions {border:solid yellow 0px;width:60%;float:right;position:absolute;right:24px;_right:350px;/*ie6*/top:10px;}
+#loginsmall DIV.logininfo {border:solid black 0px;width:100%;float:right;position:absolute;right:0;top:42px;}
+#loginsmall DIV.logininfo DIV {margin-top:3px;margin-right:24px;float:right;}
+#loginsmall A {color:#ffffff;white-space:nowrap;font-size:15px;margin-left:24px;float:right;
+	text-transform:lowercase;font-weight:bold;font-style:italic;line-height:normal;}
+#loginsmall A:hover {text-decoration:none;background-color:#000000;color:#cccccc;}
+
+#navman {position:absolute;width:1000px;border:solid silver 0px;top:112px;}
+
+#navman TABLE {border:solid blue 0px;float:left;margin-left:490px;*margin-left:16px;/*ie7andie6*/
+	font-size:20px;font-weight:bold;letter-spacing:-1px;text-transform:lowercase;}
+#navman A {float:right; margin-right: 24px;line-height:32px; color: #000000; background-color: #cccccc;  }
+#navman A:hover { color: #ffffff; background-color: #000000; text-decoration: none; }
+
+
+/*LOWER CONTENT*/
+#lowercontent {border:solid green 0px;clear:both;position:relative;padding-top:16px;}
+#sidecontent {border:solid blue 0px;min-height: 758px; }/*width: 256 set by containing table*/
+#maincontent, #validationmain, #showdisplaypage { border: solid green 0px; margin-left: 40px;width:700px; }
+#validationmain {margin-bottom:0px;}
+
+
+#MenuSection {border:solid red 0px;margin: 0px 8px 0 12px; }
+#MenuSection H4 { font-size: 24px;line-height:23px;font-weight:bold;text-transform: lowercase;color: #ffffff;
+	background-color: #000000;padding: 4px 15px;margin:0 32px 12px 3px;}  
+#MenuSection H4 A {border:solid blue 0px;display:block;color:#ffffff;}
+#MenuSection UL, #MenuSection UL UL {border:solid blue 0px; width: 90%;*width:auto; margin: 0 0 16px 0; padding: 0 3% 0 4%; 
+	text-transform: lowercase; }
+
+
+#MenuSection UL A, #MenuSection UL UL A{ display: inline-block; color: #000000; background-color: #cccccc; 
+	font-size: 15px; font-weight: bold;font-style:italic; margin-bottom: 8px;padding:0 2px; }
+#MenuSection UL A:hover, #MenuSection UL UL A:hover{ color: #ffffff; background-color: #000000; }
+#MenuSection .merchdivision { clear: both;padding:0 0 4px 0;margin:0 32px 8px 0;
+	border-bottom:1px dashed #cccccc;font-size:18px;font-weight:bold; text-transform:capitalize;}
+#MenuSection UL LI + LI.merchdivision {margin-top:12px; }
+
+#MenuTickets .tktgofast {color:#ffffff;background-color:#000000;display:block;padding:4px;}
+
+
+.merch-header, 
+DIV.title, .flow-plan .usersubscription .controlheader SPAN.title, 
+DIV.legend {border:solid blue 0px;padding-left:32px;padding-top:4px;margin-bottom:12px;
+	font-weight:bold;font-size:26px;line-height:72px;height:80px;text-transform:lowercase;
+	color:#ffffff; background-color:#000000;}
+DIV.title, .flow-plan .usersubscription .controlheader SPAN.title, .merch-header {line-height:24px;font-size:24px;padding-bottom:3px;height:auto;}
+.timezone { font-variant:small-caps;}
+
+.banner-division {max-height:150px;width:700px;margin-bottom:16px;}/*sync to settings in config 650x150*/
+.bannerimage {border:solid red 0px;vertical-align:top;width:100%;}
+.bannerimage IMG {display:block;margin:0 auto;}
+.bannertext {color:#333333;background-color:#f1f1f1;border:solid #cccccc 1px;
+	font-weight:bold;font-size:12px;line-height:16px;
+	padding:8px 16px 8px 42px;margin-bottom:12px;}
+
+/* SHOW PAGE */
+#chooseshow .showlist-wrapper {border:solid red 0px; padding-top:12px;font-size:12px;}
+
+#chooseshow .show { width:88%;margin:0 3%;padding:3%;border-bottom: 1px dashed #cccccc;
+	background-color:#f1f1f1;font-weight:bold;}
+#chooseshow .alternate {background-color:transparent;}
+#chooseticket .listitem-wrap {border:solid #cccccc 2px;padding:4px 4px 4px 0;margin-bottom:12px;}
+
+#chooseshow .venuetable { border: none green 1px; display: block; margin: 2px 0 2px 0; 
+	font-size: 18px; letter-spacing: -1px; }
+#chooseshow .datelist { border: none blue 1px; display: inline; color: #000000;
+	font-size: 16px; font-style: italic; letter-spacing: -1px; }
+#chooseshow .show TD.link { border: none green 1px; text-align: right; vertical-align: middle; 
+	width: 22%; height: 100%; }
+#chooseshow .buylink A.fixlength {white-space:normal;}
+.venuetable .venuelocation { padding: 0 8px 0 8px;font-size:20px; margin-right: 6px; white-space: nowrap; }
+#chooseshow .show .info .venuetable A:HOVER {color:#666666;}
+#chooseshow .showtitle {display:block;font-size:14px;margin-bottom:4px;}
+#chooseshow .status {color:Red;}
+#chooseshow .midtxt {font-weight:normal;font-style:italic;}/*display notes for show list page*/
+
+A.rsvp-link { display: inline-block;font-style:italic; color: #000000; background-color: #cccccc;position:absolute; 
+    top:-0px;left:-50px;width:40px;text-align:center;
+	font-size: 13px; font-weight: bold;}
+	
+
+/* TICKET PAGE */
+#chooseticket .show, #chooseticket .info {padding:0;margin:0;width:100%;}    
+
+#chooseticket .showtitle {color:#ffffff;background-color:#444444;border:solid #aaaaaa 1px;
+	font-weight:bold;font-size:18px;line-height:22px; padding:8px 16px 8px 42px;margin-bottom:12px;}
+	
+#chooseticket .ticketlist, #chooseticket .eventd {border:solid red 0px;width:88%;margin:0 3%;
+	padding:12px 3% 0 3%;font-size:14px;font-weight:bold;}
+#chooseticket .eventd DIV, #chooseticket .eventd SPAN {margin-bottom:6px;}
+
+/*..then venue...*/
+#chooseticket .info TABLE.venuetable TD {border:solid red 0px;padding:8px;line-height:24px;}
+#chooseticket .info TABLE.venuetable .datesection {text-transform:capitalize;}
+#chooseticket .info TABLE.venuetable Span.venue-section {display:block;margin-top:2px;font-size:22px;}
+
+#chooseticket .eventd .status {display:block;color:Red;}
+#chooseticket .eventd .toptxt {color:#ffffff;background-color:#000000;
+	margin-bottom:16px;padding:4px 8px;}/*header*/
+#chooseticket .eventd .actcontainer {border:solid red 0px;margin:8px 0 16px;}
+#chooseticket .eventd .actlist {font-size:24px;}/*override auto billing*/
+#chooseticket .eventd .mainact {font-size:24px;line-height:20px;margin-bottom:4px;}
+#chooseticket .eventd .openerlist {display:block;}
+
+#chooseticket .eventd .show-notes,/*displaynotes*/
+#chooseticket .eventd .showlinkcontainer {border:solid #cccccc 1px;background-color:#f1f1f1;
+	font-weight:normal;font-size:12px;padding:16px;margin-bottom:16px;color:#555555;}
+#chooseticket .eventd .showlinkcontainer .header {display:block;margin-bottom:8px;}
+#chooseticket .eventd .showlinkcontainer A {display:block;text-decoration:underline;
+	margin-left:8px;line-height:16px;}
+	
+#chooseticket .eventd .bottxt {font-weight:normal;margin-bottom:16px;border:solid #cccccc 1px;background-color:#fcfcfc;padding:12px;}
+#chooseticket .eventd .richtxt {border:none #cccccc 0px;background-color:transparent;padding:0;}
+
+#chooseticket .eventd .showtimes {font-size:16px;margin-bottom:16px;}
+#chooseticket .eventd .showtimes .times {border:solid red 0px;display:block;height:28px;position:relative;}
+#chooseticket .eventd .showtimes .times .ages {}
+#chooseticket .eventd .showtimes .dateprice {display: block;}
+
+#chooseticket .eventd .fb-control {display:block;margin-bottom:16px;height:60px;}
+
+#chooseticket .show .showimage {}
+
+
+/*none available*/
+.notix {display:block;margin:0 12px 12px 16px;}
+.notixdate {display:block;font-weight:bold;color:#333333;line-height:16px;}
+.noneavailable {color: Red;font-size:13px; } 
+
+/* ticket listing - see above for cascaded props*/
+#chooseticket .ticketlist {border:solid red 0px;font-weight:normal;font-size:12px;padding:12px 18px 0 3%;}
+#chooseticket .ticketlisting .title {font-size:14px; line-height:18px;padding-left:8px;padding-bottom:4px;    
+	text-transform:uppercase;margin-bottom:12px;}
+#chooseticket .ticketlist-wrapper {border:solid green 0px;width:98%;padding:0 8px;}
+#chooseticket .ticketlist-wrapper TABLE TD, #chooseticket .ticketlist-wrapper TABLE TH {padding:3px;}
+
+/*use pkginfo for all pkg infos*/
+.pkginfo {display:block;background-color:#333333;color:#ffffff;font-weight:bold;font-size:14px;
+	padding:4px;margin-bottom:4px;}
+	
+	
+.description {background-color:#f6f6f6;border:solid #e1e1e1 1px;font-weight:bold;padding:2px;margin-bottom:4px;}
+/*turn off any unintended styles within a rich text display */
+.description-wrapper .description {background-color:transparent;border:none #cccccc 0px;padding:0;margin-bottom:0;}
+.criteria {background-color:#fcfcfc;border:solid #cccccc 1px;font-weight:bold;padding:2px;margin-bottom:4px;}
+
+#chooseticket TABLE.saleitem {border:solid blue 0px;font-weight:bold;width:100%;padding:0;margin:0;}
+#chooseticket TABLE.saleitem TD.cartaction {width:35%;}
+#chooseticket TABLE.saleitem .venuetable {display:block;margin:6px 0;}
+#chooseticket TABLE.saleitem .mainact {display:inline;}
+
+#chooseticket .itemoptions {border:solid #cccccc 1px;background-color:#f6f6f6;padding:6px;margin-top:6px;font-size:12px;}
+
+#chooseticket .postpurchase {color:#555555;background-color:#f1f1f1;border:solid #cccccc 1px;
+	padding:3px;margin:6px 0;font-size:11px;}
+#chooseticket TABLE.saleitem TD.cartaction .contain {border:solid red 0px;width:92%;margin:0 auto;}
+#chooseticket .quant { border: solid blue 0px; display: block;height: 28px; text-align: center; }
+#chooseticket .quant SELECT { font-weight:bold;margin-right:20px; padding:3px;width:48px;}
+#chooseticket .quant A.btntribe { padding: 4px 8px; }
+#chooseticket .editcart A { text-decoration: underline;}
+#chooseticket .itemtotal { border: none blue 1px; margin: 12px 0 12px 0; font-weight: bold; white-space: nowrap; }
+
+#chooseticket .pricedescription { border: none #000000 1px; margin-top: 12px; padding: 8px;  }
+#chooseticket .pricedescription DIV { border: none red 1px; display: block; width: 100%; clear: both; }
+#chooseticket .pricedescription .label { float: left; display: inline-block; color: #000000; }
+#chooseticket .pricedescription .pricing { float: right; }
+#chooseticket .pricedescription DIV.each { font-size: 18px;line-height:32px; }
+
+#chooseticket TD.iteminfo .venuelocation {font-size:16px;}
+#chooseticket TD.iteminfo {line-height:14px;}
+
+/*ticket listing status*/
+#chooseticket .ticketstatus { font-size: 1.6em; font-weight: bold; background-color: #000000; color: White; 
+	text-transform: uppercase; margin:0; padding: 2px 2px 2px 6px; }
+	
+	
+/*bundle info */
+.bundle-offer {border: solid #cccccc 1px;margin:12px;padding:12px;font-size:11px;}
+.bundle-container{margin-bottom:12px;}
+.bundle-instructions, .bundle-oneperorder {color:#999999;margin-left:8px;}
+.bundle-header {}
+.bundle-title {font-size:13px;font-weight:bold;background-color:#cccccc;display:inline-block;margin-bottom:4px;}
+.bundle-comment {font-size:13px;color:#666662;}
+.bundle-requires {color:Red;font-size:11px;}
+.bundle-img-wrapper {border:solid #cccccc 1px;background-color:#f1f1f1;padding:4px;margin:4px;}
+.bundle-img-container {border:none blue 0px;vertical-align:top;}
+.bundle-img {display:inline;vertical-align:top;}
+.bundle-img IMG {width:50px;display:inline;margin:12px;cursor:default;vertical-align:top;}
+.bundle-img-cluetip {font-weight:bold;font-size:14px;text-align:center;
+	display:none;
+	width:220px;
+	padding:24px;
+	background:transparent url(/Images/overlay/gray.png) -40px -30px no-repeat;
+	/*rounded*/
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/*dropped*/
+	-webkit-box-shadow: #444 2px;
+	-moz-box-shadow: #444 2px;
+	box-shadow: #444 2px;
+	cursor:default;
+	}
+
+.bundle-img-cluetip .cluetainer {border:none #333333 0px;padding-bottom:32px;}
+.bundle-img-cluetip .cluetext {color:#cccccc;margin:0 0 24px 0;}
+.bundle-img-cluetip IMG {width:150px;margin:0;}
+
+A.ov-trigger,
+.redeemer A,
+A.btnhi_res,
+.custtable A,
+.userlinks A,
+A#ctl00_MainContent_ctl00_txtSubmit,
+A#ctl00_MainContent_lnkContact, 
+.update A.btntribe,
+A#ctl00_MainContent_ctl00_CreateUserWizard1_FinishNavigationTemplateContainerID_FinishLinkButton,
+A#ctl00_MainContent_ctl00_CreateUserWizard1___CustomNav0_StepNextButtonLinkButton,
+#loginbtn A.btntribe,
+#purchasedetails A.btntribe, 
+.continueship A.btntribe, 
+.auth A.btntribe, 
+.cartaction A.btntribe, .cartlinks A.btntribe, 
+.buylink A.btntribe, A.view-detail, #addtocartselector A.btntribe, .quant A.btntribe,
+#navman A, 
+#footerlinks A, 
+#MenuSection UL A, #MenuSection UL UL A, /*#MenuSection H4, */
+A.rsvp-link, 
+.rounded {
+    border: 2px solid #666;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    /*padding: 4px;*/
+    behavior: url(/Styles/PIE.htc);
+    
+    /*dropped*/
+    -webkit-box-shadow: #666 0 0 1px;
+    -moz-box-shadow: #666 0 0 1px;
+    box-shadow: #666 0 0 1px;    
+    
+}
+
+A.rsvp-link {}
+
+.update A.btntribe,
+#navman A { padding: 3px; }
+
+
+#MenuSection H4 { margin:0 4px 12px 3px;}  
+#MenuSection UL A {width:98%;}
+#MenuSection UL UL A{}
+
+
+A.ov-trigger,
+.redeemer A,
+.custtable A,
+#purchasedetails A.btntribe, 
+.continueship A.btntribe, 
+.auth A.btntribe, 
+.cartlinks A.btntribe, 
+.cartaction A.btntribe, 
+#addtocartselector A.btntribe,
+A.view-detail {border: 2px solid #666 !important;padding:4px !important;}
+
+
+#purchasedetails A.btntribe {
+    -webkit-box-shadow: #000000 0 0 0px;
+    -moz-box-shadow: #000000 0 0 0px;
+    box-shadow: #000000 0 0 0px;  
+}
+
+#blockerinstruct {font-weight:bold;font-size:14px;color:#888;margin: 16px 2px;}
+
+
+.accountlogin-error  {color:Red; font-size:16px; padding:12px 0;font-weight:bold;}

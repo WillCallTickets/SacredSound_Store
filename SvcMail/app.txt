@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+	
+	
+		<add key="dsn" value="Data Source=(local);Initial Catalog=Jabba;user id=sa;password=Gavin12!" />
+		<!--<add key="dsn" value="Data Source=fenix;Initial Catalog=Jabba;user id=sa;password=!fre_ak" />-->
+		<add key="MailThreadPollIntervalSecs" value="8" />
+		
+		<add key="SqlBatchesDir" value="C:\FoxTheatre\Batches\Mailer" />
+		<add key="ErrorLogPath" value="C:\FoxTheatre\MailerErrorLogs" />
+		<add key="SmtpServer" value="192.168.0.2" /><!--127.0.0.1" />-->
+		<add key="MailThreads" value="10" />
+		
+		<add key="BatchRetrievalRows" value="50" />
+		
+	</appSettings>
+</configuration>
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="SubSonicService" type="SubSonic.SubSonicSection, SubSonic" requirePermission="false" />
+  </configSections>
+  <SubSonicService defaultProvider="WillCall">
+    <providers>
+      <clear />
+      <add name="WillCall" type="SubSonic.SqlDataProvider, SubSonic" connectionStringName="WillCallConnectionString" generatedNamespace="Wcss">
+      </add>
+    </providers>
+  </SubSonicService>
+  <connectionStrings>
+    <clear />
+    <add name="WillCallConnectionString" connectionString="Data Source=127.0.0.1;Initial Catalog=FoxTheatre;User ID=sa;Password=Gavin12!;" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <system.net>
+    <mailSettings>
+      <smtp from="pleasedonotreply@lists.foxtheatre.com" deliveryMethod="Network">
+        <network defaultCredentials="true" host="67.199.16.234" port="25" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+  <appSettings>
+    <add key="stp_ApplicationName" value="FoxTheatre" />
+    <add key="stp_DomainName" value="localhost" />
+    <add key="stp_ApplicationStartDate" value="10/5/2008" />
+    <add key="stp_VirtualResourceDir" value="WillCallResources" />
+    <add key="stp_ErrorLogPath" value="/Logs/MailerErrorLogs" />
+    <add key="stp_ErrorLogTitle" value="MailerErrorLog_" />
+    <add key="stp_MappedRootDirectory" value="d:\source\WillCallTickets\" />
+	<add key="svc_ServiceEmail" value="customerservice@foxtheatre.com" />
+	<add key="svc_ServiceFromName" value="Fox Theatre Store" />
+	  
+    <add key="svc_ServiceTestMode" value="true" />
+    <add key="svc_ServiceTestEmail" value="rob@robkurtz.net" />
+    <add key="svc_ServiceTestFromName" value="roberto" />
+    <add key="svc_MaxThreads" value="4" />
+    <add key="svc_UseSqlDebug" value="true" />
+    <add key="svc_JobIntervalMilliSeconds" value="500" />
+    <add key="svc_PauseBetweenBatches" value="3" />
+    <add key="svc_BatchRetrievalSize" value="50" />
+    <add key="svc_ArchiveAfterDays" value="5" />
+
+    <add key="svc_SitePhysicalAddress" value="1135 13th Street Boulder, CO 80302" />
+    <add key="svc_WebmasterEmail" value="webmaster@foxtheatre.com" />
+     
+     <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="SubSonicService" type="SubSonic.SubSonicSection, SubSonic" requirePermission="false" />
+  </configSections>
+  <SubSonicService defaultProvider="WillCall">
+    <providers>
+      <clear />
+      <add name="WillCall" type="SubSonic.SqlDataProvider, SubSonic" connectionStringName="WillCallConnectionString" generatedNamespace="Wcss">
+      </add>
+    </providers>
+  </SubSonicService>
+  <connectionStrings>
+    <clear />
+    <add name="WillCallConnectionString" connectionString="Data Source=127.0.0.1;Initial Catalog=Sts9Store;User ID=vork;Password=Gavin12!;" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <system.net>
+    <mailSettings>
+      <smtp from="subscriptions@sts9store.com" deliveryMethod="Network">
+        <network defaultCredentials="true" host="67.199.16.233" port="25" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+  <appSettings>
+    <add key="stp_ApplicationName" value="WILLCALL" />
+    <add key="stp_DomainName" value="localhost" />
+    <add key="stp_ApplicationStartDate" value="7/15/2007" />
+    <add key="stp_VirtualResourceDir" value="WillCallResources" />
+    <add key="stp_ErrorLogPath" value="/Logs/MailerErrorLogs" />
+    <add key="stp_ErrorLogTitle" value="MailerErrorLog_" />
+    <add key="stp_MappedRootDirectory" value="d:\source\WillCallTickets\" />
+	<add key="svc_ServiceEmail" value="customerservice@sts9store.com" />
+	<add key="svc_ServiceFromName" value="STS9 Store Service Mailer" />
+	  
+    <add key="svc_ServiceTestMode" value="true" />
+    <add key="svc_ServiceTestEmail" value="rob@robkurtz.net" />
+    <add key="svc_ServiceTestFromName" value="roberto" />
+    <add key="svc_MaxThreads" value="4" />
+    <add key="svc_UseSqlDebug" value="true" />
+    <add key="svc_JobIntervalMilliSeconds" value="500" />
+    <add key="svc_PauseBetweenBatches" value="3" />
+    <add key="svc_BatchRetrievalSize" value="50" />
+    <add key="svc_ArchiveAfterDays" value="5" />
+
+    <add key="svc_SitePhysicalAddress" value="STS9 PO BOX 99 Louisville, CO 80027" />
+    <add key="svc_WebmasterEmail" value="webmaster@sts9store.com" />
+     
+     <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>

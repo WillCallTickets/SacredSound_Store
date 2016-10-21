@@ -1,0 +1,9 @@
+﻿
+#bun-selector {}
+#bun-selector UL {margin:8px;}
+#bun-selector IMG {border:none red 1px; max-width:25px; max-height: 25px;margin-right:12px;margin-bottom:0;float:left; }
+#bun-selector LI {border:none blue 1px;vertical-align:middle;line-height:25px;margin-bottom:4px;cursor:pointer;display:block;width:100%;clear:both}
+
+
+#bun-collector { border:solid #cccccc 1px; background-color:#ffffff; width:98%;height:125px;margin:24px auto 0 auto;}
+

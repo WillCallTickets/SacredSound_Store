@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ASP.NET Web API</title>
+    <link href="../../Content/Site.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-1.7.1.min.js" type="text/javascript">
+        // TODO Add script
+    </script>
+</head>
+<body id="body" >
+    <div class="main-content">
+        <ul>
+            <li><a href="/merch/">Merchandise</a></li>
+            <li><a href="/events/">Events</a></li>
+            <li><a href="/eventgroups/">Event Groups</a></li>
+            <li><a href="/tickets/">Tickets</a></li>            
+        </ul>
+        <div>
+            <h1>All Tickets</h1>
+            <ul id="tickets"/>
+        </div>
+        <div>
+            <label for="ticketId">ID:</label>
+            <input type="text" id="ticketId" size="5"/>
+            <input type="button" value="Search" onclick="find();" />
+            <p id="ticket" />
+            <input type="button" value="Reset Cache" onclick="resetCache();" />
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Send an AJAX request
+            $.getJSON("/tickets/",
+                function (data) {
+                    // On success, 'data' contains a list of products.
+                    $.each(data, function (key, val) {
+
+                        // Format the text to display.
+                        var str = "ID: " + val.Id + ' ' + val.Name + ': $' + val.Price;
+
+                        // Add a list item for the product.
+                        $('<li/>', { text: str })
+                        .appendTo($('#tickets'));
+                    });
+            });
+        });
+        
+        function find() {
+
+            var id = $('#ticketId').val();
+            
+            $.getJSON("/tickets/" + id,
+                function (data) {
+                    var str = data.Name + ': $' + data.Price;
+                    $('#ticket').text(str);
+                })
+                .fail(
+                    function (jqXHR, textStatus, err) {
+                        $('#ticket').text('Error: ' + err);
+            });           
+        }
+
+        function resetCache() {
+
+            $.getJSON("/tickets/" + 0,
+                function (data) {
+                    window.location.reload();
+
+//                    var str = "cache has been reset";
+//                    $('#ticket').text(str);
+                })
+                .fail(
+                    function (jqXHR, textStatus, err) {
+                        $('#ticket').text('Error: ' + err);
+                    });
+        }
+
+        
+    </script>
+
+</body>
+</html>

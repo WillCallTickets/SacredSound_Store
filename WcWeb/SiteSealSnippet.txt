@@ -1,0 +1,9 @@
+
+
+//small image
+<script language="Javascript" src="https://seal.godaddy.com/getSeal?sealID=211492874702d8be4a127113651a5a3a17cf403133581632275344724"></script>
+
+
+//medium image
+<script language="Javascript" src="https://seal.godaddy.com/getSeal?sealID=211492874702d8be4a127113651a5a3a17cf403133581632275344724"></script>
+

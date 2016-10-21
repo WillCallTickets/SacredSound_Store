@@ -1,0 +1,222 @@
+﻿
+//bootstrap colors
+@bs_info:#5bc0de;
+@bs_default:#ccc;
+@bs_primary:#428bca;
+@bs_success:#5cb85c;
+@bs_warning :#f0ad4e;
+@bs_danger :#d9534f;
+@dark_blue:#354F99;
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.wct-modal-loader-spinner {  
+    display:inline-block;
+    vertical-align:middle;
+    width:1.1em;
+    height:1.1em;
+    background:url("/Images/ajax-loader-arrow-ccc.gif") no-repeat;
+}
+
+.well-behind {
+    position:fixed;
+    top:0; 
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:2048;    
+    background-color:rgba(100,100,100,.6);
+    overflow:scroll;
+}
+
+.well-outfront {
+    position: relative;
+    top: 150px;
+    left: 150px;
+    width: 600px;
+    z-index: 1;
+    background-color:#eee;
+}
+.well-outfront.well-outfront-sm {
+     width:400px;
+}
+.well-outfront.well-outfront-med {
+     width:900px;
+}
+.well-outfront.well-outfront-lg {
+     width:1024px;
+}
+.well-outfront.well-outfront-lgr {
+     width:1100px;
+}
+.well-outfront.well-outfront-xl {
+     width:1200px;
+}
+
+.fade-slow {
+   opacity: 0;
+   //http://cubic-bezier.com/#.51,.05,.34,.94
+   @trans:~'.51,.05,.34,.94';
+   @time:1s;
+   -webkit-transition: opacity @time cubic-bezier(@trans);
+      -moz-transition: opacity @time cubic-bezier(@trans);
+       -ms-transition: opacity @time cubic-bezier(@trans);
+        -o-transition: opacity @time cubic-bezier(@trans);
+           transition: opacity @time cubic-bezier(@trans);
+ }
+
+.fade-med {
+   opacity: 0;
+   //http://cubic-bezier.com/#.51,.05,.34,.94
+   @trans:~'.51,.05,.34,.94';
+   @time:0.6s;
+   -webkit-transition: opacity @time cubic-bezier(@trans);
+      -moz-transition: opacity @time cubic-bezier(@trans);
+       -ms-transition: opacity @time cubic-bezier(@trans);
+        -o-transition: opacity @time cubic-bezier(@trans);
+           transition: opacity @time cubic-bezier(@trans);
+ }
+
+.btn {
+    text-decoration:none;
+}
+
+.btn-space-right {
+    margin-right:20px;
+}
+.btn-space-left {
+    margin-left:20px;
+}
+
+
+.sts9panel {
+
+    .panel-header {
+        //background-color:darken(@bs_primary, 20%);
+        color: #444;
+        padding: 10px;
+
+        .panel-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        LABEL {
+            color: #444;
+        }
+    }
+
+    .panel-details {
+        border: solid #999 1px;
+        margin: 0 10px;
+        padding: 10px;
+        .border-radius();
+        background-color: #d6d6d6;
+    }
+
+    .panel-body {
+        //border: solid #999 1px;
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .panel-footer {
+        background-color: #d6d6d6;
+        margin-top:10px;
+        padding:10px;
+    }
+}
+
+.round-table-border {
+    border: solid #ccc 1px;
+    .border-radius();
+}
+
+#printmanifest .well-outfront {
+    top: 50px;
+    left: 100px;
+}
+#printmanifest .panel-body {
+    //border: solid #999 1px;
+    padding: 10px 0 0 0;
+
+    table {
+        TH, TD {
+            padding: 1px 3px;
+            border: solid #bbb 1px;
+        }
+    }
+}
+
+@media print {
+    // * { margin: 0 !important; padding: 0 !important; }
+      #controls, .footer, .footerarea{ display: none; }
+      html, body {
+        /*changing width to 100% causes huge overflow and wrap*/
+        height:100%; 
+        overflow: hidden;
+        background: #FFF; 
+        font-size: 9px;
+      }
+
+    #admin {
+        position:relative;
+    }
+
+    #headsection,
+    #adminmenu {
+        display:none;
+    }
+
+    #printmanifest {
+
+        .well-behind {
+            clear: both;
+            position: absolute;
+            top: 0;
+            left: 0; /*admin menu width*/
+            z-index: 2048;
+        }
+
+        .well-outfront {
+            top: 0;
+            left: 0;
+            height: 100%;
+
+            .panel {
+                width: 690px !important;
+                height:100%;
+            }
+            
+            .panel-body {
+            }
+
+            .panel-details {
+            }
+
+            .panel-footer {
+                margin-top:0;
+                display: none;
+            }
+
+            .panel-header {
+                INPUT,
+                LABEL,
+                .btn {
+                    display: None;
+                }
+            }
+        }
+    }
+
+}
+
+

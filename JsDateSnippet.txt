@@ -1,0 +1,37 @@
+  //try to create a date
+        try {
+
+            var dt = new Date(year, month - 1, day, 0, 0, 0, 0); //months are zero based
+            var today = new Date();
+            var years = today.getFullYear() - dt.getFullYear();
+
+            //http://msdn.microsoft.com/en-us/library/ie/ee532932(v=vs.94).aspx
+            // Reset birthday to the current year.
+            dt.setFullYear(today.getFullYear());
+
+            // If the user's birthday has not occurred yet this year, subtract 1.
+            if (today < dt) {
+                years--;
+            }
+
+            //all good - set cookie
+            if (years >= 18) {
+
+                //construct string
+                var datestring = (dt.getMonth() + 1).toString() + dt.getDate().toString() + dt.getFullYear().toString();
+
+                //todo: pass cookie key via hidden field - uacd
+                
+
+
+                parent.$('#complianceoverlay a.close').trigger("click");
+            }
+
+
+            error = 'You must be 18 years of age or older to view this page.';
+        }
+        catch(ex) {
+
+            //show error
+            error = 'Please enter a valid date.';
+        }

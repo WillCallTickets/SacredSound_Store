@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" EnableViewState="false" CodeFile="Menu_Item_Vertical.ascx.cs" Inherits="WillCallWeb.Controls.Menu_Item_Vertical" %>
+<asp:Panel ID="panelContent" runat="server" />

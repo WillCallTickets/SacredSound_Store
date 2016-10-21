@@ -1,0 +1,265 @@
+﻿/* use a semi-transparent image for the overlay */
+#divbundle DIV.item-container {position:absolute;}
+
+#overlay-bundle { border:none yellow 0px;/*background-image:url(/Images/overlay/transparent_912.png); */
+    background-color:#222222;
+	color:#efefef; width:912px; padding:0; overflow:auto; position:absolute; }
+	
+/* container for external content. uses vertical scrollbar, if needed */
+div.contentWrap {height:450px;margin:36px;overflow-x:auto;}
+	
+#overlay-bundle A.close {border:solid red 0px; position:absolute; top:14px; right:10px; cursor:pointer;
+    font-size:12px;font-weight:bold;color:#999999;vertical-align:middle;line-height:36px;
+    padding-right:36px;text-align:right;
+	height:35px; width:200px; background-image:url('/Images/overlay/close.png'); background-repeat:no-repeat; background-position:right; }
+	
+#overlay-bundle .contentWrap A.close {top:476px;left:12px;position:absolute; cursor:pointer;background-position:left;
+    
+	padding-left:38px;text-align:left; }	
+	
+.bn-container {border:solid #cccccc 1px;background-color:#ffffff;padding:2px 4px;line-height:11px;font-size:10px;font-weight:normal;margin-top:2px;}
+/*.bn-title {font-weight:bold;}   */
+	
+	
+	
+/*modal popup editor*/
+.entity-modal {border:solid #013388 1px;padding:24px;background-color:#E9F1FF;}
+
+.modal-title {color:#013388;}
+              
+.modal-control {}
+.modal-control INPUT {margin-left:32px;}/*spacing for control buttons*/
+
+.popuptable {margin-bottom:24px;}
+.popuptable TH {padding-top:12px;text-align:right;padding-right:12px;color:#013388;}
+.popuptable TD {padding-top:12px;}
+TR.instruct TD {color:#4183F4;font-size:10px;line-height:8px;padding-top:4px;}
+
+.modal-control .btn-cancel {background: url(/Images/cancel-32.png) no-repeat;width:80px;}
+
+
+
+#maincart {margin:0 0 12px 0;font-weight:bold;}
+
+#billship .payinfo DIV.title, #billship .shipinfo DIV.title, .auth .title,
+#maincart .title, .flow-plan .usersubscription .controlheader SPAN.title {display:block;padding-left:12px;}
+.shipinfo .title A {color:#ffffff;text-decoration:underline;font-size:14px;}
+
+.emptycart {background-color:#f1f1f1;color:red;border:solid #cccccc 1px; font-size:22px;font-weight:bold;line-height:24px;
+    padding:16px;margin-bottom:24px;}
+
+.carterror {margin-left:24px;font-size:14px;color:Red;}
+
+.panel-wrapper {border:solid #cccccc 1px;margin: 0 16px 16px 16px;padding:8px 12px 8px 8px;}
+
+.panel-float {position:relative;float:left;width:640px;}
+.panel-float .cartaction {float:left;width:190px;padding-top:8px;margin-right:8px;text-align:center;}
+.panel-float .iteminfo {border:solid green 0px;float:right;width:430px;padding-top:8px;padding-right:12px;}
+
+.item-container {padding-bottom:8px;background-color:#f9f9f9;}
+#maincart.purchase .item-container {padding:8px;}
+
+.item-separator {background-color: #cccccc;width:100%;line-height:4px;}
+.sepdark {background-color: #333333;}
+
+.panel-float .item-container, .panel-float .item-separator {float:left;}
+
+.ticketship-options {margin-bottom:8px;}
+
+#maincart .showtitle {color:#333333;background-color:#e1e1e1;border:solid #cccccc 1px;
+    font-weight:bold;font-size:14px;padding:4px;margin-bottom:4px;}
+    
+
+
+#cartlist .panel-wrapper {padding:0;}
+
+TABLE.crtlst {width:100%;}
+TABLE.crtlst A.editbtn {border:solid #666666 1px;margin-left:190px;padding:1px 8px;background-color:#eeeeee;font-size:11px;}
+
+TABLE.crtlst TH {white-space:nowrap;font-size:12px;background-color:#cccccc;color:#000000;width:10%}
+TABLE.crtlst TH, TABLE.crtlst TD {border-top:solid #cccccc 1px; padding:4px;vertical-align:top;text-align:center;}
+TABLE.crtlst TH.descript {width:100%;text-align:left;}
+
+TABLE.crtlst TD.descript {text-align:left;}
+TABLE.crtlst TD SPAN {display:block;font-size:10px;color:#666666;}
+TABLE.crtlst TD.descript .pickupoptions {border:solid blue 0px;margin:2px 0 4px 0;}
+
+.flow-plan .usersubscription INPUT, #terms INPUT, 
+.panel-wrapper INPUT {vertical-align:-2px;}
+
+.refunditem {display: block; margin: 8px 0 8px 0; font-weight: bold; font-size: 14px; color: Red; }
+
+DIV.actionable SELECT {font-weight:bold;font-size:15px;margin-right:18px;padding:3px;width:48px;}
+.cartaction .itemqty {font-size:15px;margin-right:18px;}
+.cartaction A.btntribe { padding:4px 10px;border:solid #999999 1px;}
+.cartaction .removal {font-weight:normal;line-height:22px;margin-top:8px;}
+.cartaction .itemtotal {display:block; font-size:22px;margin:12px 0 0 0;}
+.cartaction .itemtotal .money {padding-left:24px;}
+
+
+.eventdate, .venuetable, .mainact, .productname  {line-height:22px;}
+.datelist {display:inline-block;font-size:16px;font-style:italic;margin-right:12px;}
+.agestimes {}
+.venuetable {display:block;font-size:14px;}/*overrides default.css*/
+#maincart .venuetable .venuelocation {font-size:14px;}
+.mainact {font-size:14px;text-transform:uppercase;}
+.productname {font-size:16px;margin-top:4px;}
+.with {text-transform:lowercase;}
+.openers {font-weight:normal;font-size:12px;margin-left:4px;}
+.promoadditionaltext {padding:4px;font-size:10px;color:#666666;}
+
+DIV.promotion .promoselection + .promoselectionsection {margin-top:12px;}
+DIV.promotion .promoselectionsection {color:red;Margin-top:4px;} 
+
+
+.pricepanel {font-size:12px;line-height:32px;}
+.pricepanel .itemtotal {font-size:16px;}
+.pricepanel .money {font-size:12px;padding:0 12px;}
+
+
+
+/*for edit cart*/
+.itemoptions {border:solid #cccccc 1px;padding:4px 2px;margin-top:8px;background-color:#f6f6f6;}
+/*for purchase cart */
+.item-option {background-color:#dddddd;border:solid #999999 1px;padding:4px;margin:2px 0;}
+.item-option A {text-decoration:underline;}
+
+.download-panel {border:solid blue 0px;font-size:11px;background-color:#666666;color:#ffffff;padding:2px 4px;display:block;margin:2px 0 14px 0;width:85%;}
+.download-panel span {margin-left:12px;font-size:12px;font-family:Courier;}
+
+.promotion .item-container {padding:8px;}
+TR.promotion {line-height:24px;vertical-align:middle;}
+.promodisplaytext {margin-bottom:8px;font-size:14px;}
+
+.shippanel .shipnotes {text-align:center;margin-bottom:8px;}
+.shippanel .panel-wrapper {border:solid #cccccc 1px;background-color:#f6f6f6;}
+.shippanel .shippingoptions .panel-wrapper {padding:0;}
+.shippingoptions .panel-wrapper .item-container {background-color:#ffffff;padding:4px 12px 8px 12px;}
+.shippanel .ship-title {margin:4px 0 4px 0;}
+
+.shiprate .items {padding:2px 8px; color:#444444;font-size:10px;margin-bottom:4px;}
+
+
+/*confirmation*/
+.shippanel .productname {font-size:14px;line-height:normal;}
+.shipmentcontents {margin-top:8px;}
+.shipcontentitem {padding:2px 4px;font-size:10px;color:#444444;}
+.shippanel .itemtotal {font-size:14px;}
+.shipterms UL {background-color:#fefefe;padding:4px 8px 4px 16px;text-indent:-12px;}
+
+.cart-info A {text-decoration:underline;}
+
+
+.refundinfo .item-container, .giftterms {width:95%;margin:18px auto 0 auto;border:solid #cccccc 1px;}
+.giftterms {background-color:#cccccc;}
+.giftterms DIV, .giftterms UL {margin:12px;}
+
+.TimerContainer {color:Red !important;}
+.TimerContainer .TimerFunction A {font-size:13px;line-height:normal;background-color:#cccccc;}
+.TimerContainer .TimerFunction A:HOVER {color:#ffffff;background-color:#666666;}
+.TimerContainer SPAN {display:inline !important;color:Red !important;font-size:11px !important;}
+
+
+.flow-plan .usersubscription UL {padding-bottom:8px;font-weight:bold;font-size:14px;}
+.flow-plan .usersubscription TABLE TD {padding-bottom:12px;}
+.flow-plan .usersubscription .subscriptionlistitem {display:inline;}
+.flow-plan .usersubscription .subscriptionname {font-weight:bold;font-size:12px;}
+
+
+.tixpurchaseinstruct .cart-sub-division, .invoicegiftmessage .cart-sub-division,
+.carttotalcontainer {border:solid #cccccc 1px;margin:16px 16px 24px 16px;padding:12px;background-color:#f6f6f6;}
+
+.cart-totals {width:100%;font-size:18px;font-weight:bold;}
+#confirmation TABLE.cart-totals {width:300px;}
+.cart-totals TD, #maincart TABLE.cart-totals TH {padding:0;text-align:left;vertical-align:middle;}
+.cart-totals TH {width:200px;}
+.cart-totals TH, .cart-totals TD {text-align:right;border:none !important;}
+.cart-totals TD .carteditor, #maincart TABLE.cart-totals TD.message {text-align:left;}
+.cart-totals TD.message {font-size:12px;padding-left:12px;padding-top:2px;line-height:18px;}
+
+TR.promotion TD.message {border:solid red 1px;color:Red;}
+.remover {margin-left:12px;padding:0 6px;text-decoration:underline;color:#444;}
+.removepromo-btn {position:relative;top:3px;}
+
+.cart-totals TR.subtotal TH, #maincart TABLE.cart-totals TR.subtotal TD {padding-top:8px;}
+.cart-totals TR.total {font-size:22px;}
+.cart-totals TR.credit A { margin-left: 38px; font-weight: bold; }
+.cart-totals TD.message {text-align:left;}
+.cart-totals .total .message .redeemer A {display:block;margin-top:8px;}
+.cart-totals TR.credit {line-height:24px;}
+.cart-totals TR.credit TH, #maincart TABLE.cart-totals TR.credit TD {padding-top:12px;padding-bottom:12px;}
+.cart-totals DIV.creditdoesnotapply {font-size:10px;font-variant:normal;line-height:14px;}
+.cart-totals TH.youhavecredit { color: red; font-variant: small-caps; }
+.cart-totals TD.youhavecredit { text-align: right; }
+.cart-totals A.youhavecredit { text-decoration: underline; font-weight: normal;color:Red; }
+.cart-totals TR.credit TD.message INPUT { text-align: right; }
+.cart-totals TD.totaldivider {padding:12px 0; }
+.cart-totals TD .carteditor {text-align:left;vertical-align:middle;padding:24px 0 0 24px;}
+.cart-totals TD .carteditor A {margin-right:32px;padding:4px 8px;border:solid #cccccc 1px;}
+
+#billship {position:relative;float:left;width:100%;margin-bottom:16px;}
+#billship .payinfo, #billship .shipinfo { width: 48%;float: left;font-weight:bold; }
+#billship .shipinfo{ float: right;margin-right:16px; }
+#billship TABLE {width:100%;background-color:#ffffff;}
+#billship TABLE TH, #billship TABLE TD {padding:4px;text-align:left;vertical-align:middle;}
+#billship TABLE INPUT[type=text] {width:200px;}
+#billship SELECT.countrylist { width: 206px; }
+
+#purchasedetails #billship TABLE {margin-left:16px;}
+#purchasedetails #billship TABLE TH, #purchasedetails #billship TABLE TD {padding:1px;vertical-align:middle;}
+#purchasedetails .legend A.btntribe {margin-left:32px;vertical-align:2px;padding:8px;border:solid #f6f6f6 1px;}
+#purchasedetails DIV.ordernotes, #purchasedetails DIV.merchantdescriptor {font-weight:bold;padding:0 12px 12px 12px;}
+#purchasedetails DIV.merchantdescriptor {padding-top:12px;}
+
+DIV.auth {clear:both;display: block;font-weight:bold;font-size:14px;line-height:32px;}
+DIV.auth TD.auth {padding-top:16px;}
+
+/*because shipping panel needs to be turned off - the id is not used here to work around the confusion of a control id*/
+.shipinfo INPUT.cart-giftmessage {vertical-align:top;line-height:normal;}
+
+.giftmessage { margin-top: 8px; }
+.giftmessage .title { font-weight: bold; }
+
+#charitydonation .panel-wrapper {padding:0;}
+#charitydonation .item-container {margin:8px;padding:8px;}
+#charitydonation .item-container SELECT {margin:0 12px;font-weight:bold;}
+DIV.continueship { clear: both; display: block;padding: 32px 0 0 75px; }
+DIV.continueship A.btntribe, .auth A.btntribe {padding:4px 8px;}
+.checkout-continue {display:none;line-height:32px;font-weight:bold;font-size:18px;}
+
+
+#terms {vertical-align:middle;line-height:48px;}
+A.termsofsale {text-decoration:underline;}
+
+/*bundle-panel-wrapper is just a container - do not apply any spacing */
+.bundle-panel-wrapper {clear:both;width:100%;margin:0 auto;}
+.bundle-offered {border:solid #cccccc 0px;padding-top:12px;}
+.bundle-panel-wrapper .item-container, .bundle-panel-wrapper .item-separator {float:none;margin:0 0 4px 0;}
+.bundle-panel-wrapper .item-separator {line-height:4px;margin:0 0 4px 0;}
+.bundle-panel-wrapper .panel-wrapper {border:none;margin-bottom:0;}
+.bundle-panel-wrapper .item-container {border:solid #cccccc 0px;padding-bottom:4px;}
+.bundle-section-title {border:solid #999999 1px;margin:0 12px;padding:4px;background-color:#dddddd;}
+.mblist-title {background-color:#dddddd;margin-bottom: 8px;padding:2px;}
+.mblist-num-select {margin-left:24px;}
+.mblist-selection {margin:16px 0 4px 0;}
+
+
+#maincart.purchase .bundle-container {}
+.bundle-purchase-container {border:solid #999999 1px; margin-bottom:4px;padding:4px;}
+.bundle-purchase-container .bundle-title {background-color:transparent;font-size:11px;padding:0;margin:0;}
+.bundle-header {}
+
+.bundle-comment, .bundle-numchoices, .bundle-purchase-container .bundle-selection-container 
+{font-size:10px;padding-left:12px;line-height:14px;}
+
+
+/*
+.bundle-comment, .bundle-numchoices {font-size:10px;padding-left:12px;color:#444444;line-height:14px;}
+.bundle-purchase-container .bundle-selection-container {margin:0 0 0 12px;color:#444444;}
+.bundle-selection {}
+*/
+
+.bundle-panel-wrapper .mblist-price {font-size:16px;}
+
+.bundle-panel-wrapper A.non-qual, .non-qual {color:#cc0000;font-weight:bold;}
+.bundle-indent {padding-left:12px;}

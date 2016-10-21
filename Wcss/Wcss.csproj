@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4731B95C-706B-43D2-B881-86EC34C4EE49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WillCallSubSonic</RootNamespace>
+    <AssemblyName>WillCallSubSonic</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Derived\_Checkout.cs" />
+    <Compile Include="Derived\_DatabaseHelper.cs" />
+    <Compile Include="Derived\_Config_Facebook.cs" />
+    <Compile Include="Derived\_ImageManager.cs" />
+    <Compile Include="Derived\_Interface.cs" />
+    <Compile Include="Derived\_Shipper.cs" />
+    <Compile Include="Derived\_StateServer.cs" />
+    <Compile Include="ErrorLogging\ErrorLogger.cs" />
+    <Compile Include="ForeignKeys\MailerTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ForeignKeys\SalePromotion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ForeignKeys\SalePromotionAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ForeignKeys\ShowTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\ErrorLog\Log.cs" />
+    <Compile Include="Generated\ErrorLog\LogArchive.cs" />
+    <Compile Include="Generated\ErrorLog\LogArchiveController.cs" />
+    <Compile Include="Generated\ErrorLog\LogController.cs" />
+    <Compile Include="Generated\ErrorLog\StoredProcedures.cs" />
+    <Compile Include="Generated\WillCall\Act.cs" />
+    <Compile Include="Generated\WillCall\ActController.cs" />
+    <Compile Include="Generated\WillCall\ActivationWindow.cs" />
+    <Compile Include="Generated\WillCall\ActivationWindowController.cs" />
+    <Compile Include="Generated\WillCall\Age.cs" />
+    <Compile Include="Generated\WillCall\AgeController.cs" />
+    <Compile Include="Generated\WillCall\AspnetApplication.cs" />
+    <Compile Include="Generated\WillCall\AspnetApplicationController.cs" />
+    <Compile Include="Generated\WillCall\AspnetMembership.cs" />
+    <Compile Include="Generated\WillCall\AspnetMembershipController.cs" />
+    <Compile Include="Generated\WillCall\AspnetPath.cs" />
+    <Compile Include="Generated\WillCall\AspnetPathController.cs" />
+    <Compile Include="Generated\WillCall\AspnetPersonalizationAllUser.cs" />
+    <Compile Include="Generated\WillCall\AspnetPersonalizationAllUserController.cs" />
+    <Compile Include="Generated\WillCall\AspnetPersonalizationPerUser.cs" />
+    <Compile Include="Generated\WillCall\AspnetPersonalizationPerUserController.cs" />
+    <Compile Include="Generated\WillCall\AspnetProfile.cs" />
+    <Compile Include="Generated\WillCall\AspnetProfileController.cs" />
+    <Compile Include="Generated\WillCall\AspnetRole.cs" />
+    <Compile Include="Generated\WillCall\AspnetRoleController.cs" />
+    <Compile Include="Generated\WillCall\AspnetSchemaVersion.cs" />
+    <Compile Include="Generated\WillCall\AspnetSchemaVersionController.cs" />
+    <Compile Include="Generated\WillCall\AspnetUser.cs" />
+    <Compile Include="Generated\WillCall\AspnetUserController.cs" />
+    <Compile Include="Generated\WillCall\AspnetUsersInRole.cs" />
+    <Compile Include="Generated\WillCall\AspnetUsersInRoleController.cs" />
+    <Compile Include="Generated\WillCall\AspnetUsersOld.cs" />
+    <Compile Include="Generated\WillCall\AspnetUsersOldController.cs" />
+    <Compile Include="Generated\WillCall\AspnetWebEventEvent.cs" />
+    <Compile Include="Generated\WillCall\AspnetWebEventEventController.cs" />
+    <Compile Include="Generated\WillCall\AuthorizeNet.cs" />
+    <Compile Include="Generated\WillCall\AuthorizeNetController.cs" />
+    <Compile Include="Generated\WillCall\Cashew.cs" />
+    <Compile Include="Generated\WillCall\CashewController.cs" />
+    <Compile Include="Generated\WillCall\ChargeHourly.cs" />
+    <Compile Include="Generated\WillCall\ChargeHourlyController.cs" />
+    <Compile Include="Generated\WillCall\ChargeStatement.cs" />
+    <Compile Include="Generated\WillCall\ChargeStatementController.cs" />
+    <Compile Include="Generated\WillCall\CharitableContribution.cs" />
+    <Compile Include="Generated\WillCall\CharitableContributionController.cs" />
+    <Compile Include="Generated\WillCall\CharitableListing.cs" />
+    <Compile Include="Generated\WillCall\CharitableListingController.cs" />
+    <Compile Include="Generated\WillCall\CharitableOrg.cs" />
+    <Compile Include="Generated\WillCall\CharitableOrgController.cs" />
+    <Compile Include="Generated\WillCall\Download.cs" />
+    <Compile Include="Generated\WillCall\DownloadController.cs" />
+    <Compile Include="Generated\WillCall\EmailLetter.cs" />
+    <Compile Include="Generated\WillCall\EmailLetterController.cs" />
+    <Compile Include="Generated\WillCall\EmailParam.cs" />
+    <Compile Include="Generated\WillCall\EmailParamArchive.cs" />
+    <Compile Include="Generated\WillCall\EmailParamArchiveController.cs" />
+    <Compile Include="Generated\WillCall\EmailParamController.cs" />
+    <Compile Include="Generated\WillCall\EventQ.cs" />
+    <Compile Include="Generated\WillCall\EventQArchive.cs" />
+    <Compile Include="Generated\WillCall\EventQArchiveController.cs" />
+    <Compile Include="Generated\WillCall\EventQController.cs" />
+    <Compile Include="Generated\WillCall\FaqCategorie.cs" />
+    <Compile Include="Generated\WillCall\FaqCategorieController.cs" />
+    <Compile Include="Generated\WillCall\FaqItem.cs" />
+    <Compile Include="Generated\WillCall\FaqItemController.cs" />
+    <Compile Include="Generated\WillCall\FbStat.cs" />
+    <Compile Include="Generated\WillCall\FbStatController.cs" />
+    <Compile Include="Generated\WillCall\FraudScreen.cs" />
+    <Compile Include="Generated\WillCall\FraudScreenController.cs" />
+    <Compile Include="Generated\WillCall\HeaderImage.cs" />
+    <Compile Include="Generated\WillCall\HeaderImageController.cs" />
+    <Compile Include="Generated\WillCall\HintQuestion.cs" />
+    <Compile Include="Generated\WillCall\HintQuestionController.cs" />
+    <Compile Include="Generated\WillCall\HistoryInventory.cs" />
+    <Compile Include="Generated\WillCall\HistoryInventoryController.cs" />
+    <Compile Include="Generated\WillCall\HistoryPricing.cs" />
+    <Compile Include="Generated\WillCall\HistoryPricingController.cs" />
+    <Compile Include="Generated\WillCall\HistorySubscriptionEmail.cs" />
+    <Compile Include="Generated\WillCall\HistorySubscriptionEmailController.cs" />
+    <Compile Include="Generated\WillCall\Inventory.cs" />
+    <Compile Include="Generated\WillCall\InventoryController.cs" />
+    <Compile Include="Generated\WillCall\Invoice.cs" />
+    <Compile Include="Generated\WillCall\InvoiceBillShip.cs" />
+    <Compile Include="Generated\WillCall\InvoiceBillShipController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceEvent.cs" />
+    <Compile Include="Generated\WillCall\InvoiceEventController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceFee.cs" />
+    <Compile Include="Generated\WillCall\InvoiceFeeController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceItem.cs" />
+    <Compile Include="Generated\WillCall\InvoiceItemController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceItemPostPurchaseText.cs" />
+    <Compile Include="Generated\WillCall\InvoiceItemPostPurchaseTextController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceShipment.cs" />
+    <Compile Include="Generated\WillCall\InvoiceShipmentController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceShipmentItem.cs" />
+    <Compile Include="Generated\WillCall\InvoiceShipmentItemController.cs" />
+    <Compile Include="Generated\WillCall\InvoiceTransaction.cs" />
+    <Compile Include="Generated\WillCall\InvoiceTransactionController.cs" />
+    <Compile Include="Generated\WillCall\ItemImage.cs" />
+    <Compile Include="Generated\WillCall\ItemImageController.cs" />
+    <Compile Include="Generated\WillCall\JShowAct.cs" />
+    <Compile Include="Generated\WillCall\JShowActController.cs" />
+    <Compile Include="Generated\WillCall\JShowPromoter.cs" />
+    <Compile Include="Generated\WillCall\JShowPromoterController.cs" />
+    <Compile Include="Generated\WillCall\Lottery.cs" />
+    <Compile Include="Generated\WillCall\LotteryController.cs" />
+    <Compile Include="Generated\WillCall\LotteryRequest.cs" />
+    <Compile Include="Generated\WillCall\LotteryRequestController.cs" />
+    <Compile Include="Generated\WillCall\Mailer.cs" />
+    <Compile Include="Generated\WillCall\MailerContent.cs" />
+    <Compile Include="Generated\WillCall\MailerContentController.cs" />
+    <Compile Include="Generated\WillCall\MailerController.cs" />
+    <Compile Include="Generated\WillCall\MailerTemplate.cs" />
+    <Compile Include="Generated\WillCall\MailerTemplateContent.cs" />
+    <Compile Include="Generated\WillCall\MailerTemplateContentController.cs" />
+    <Compile Include="Generated\WillCall\MailerTemplateController.cs" />
+    <Compile Include="Generated\WillCall\MailerTemplateSubstitution.cs" />
+    <Compile Include="Generated\WillCall\MailerTemplateSubstitutionController.cs" />
+    <Compile Include="Generated\WillCall\MailQueue.cs" />
+    <Compile Include="Generated\WillCall\MailQueueArchive.cs" />
+    <Compile Include="Generated\WillCall\MailQueueArchiveController.cs" />
+    <Compile Include="Generated\WillCall\MailQueueController.cs" />
+    <Compile Include="Generated\WillCall\Merch.cs" />
+    <Compile Include="Generated\WillCall\MerchBundle.cs" />
+    <Compile Include="Generated\WillCall\MerchBundleController.cs" />
+    <Compile Include="Generated\WillCall\MerchBundleItem.cs" />
+    <Compile Include="Generated\WillCall\MerchBundleItemController.cs" />
+    <Compile Include="Generated\WillCall\MerchCategorie.cs" />
+    <Compile Include="Generated\WillCall\MerchCategorieController.cs" />
+    <Compile Include="Generated\WillCall\MerchColor.cs" />
+    <Compile Include="Generated\WillCall\MerchColorController.cs" />
+    <Compile Include="Generated\WillCall\MerchController.cs" />
+    <Compile Include="Generated\WillCall\MerchDivision.cs" />
+    <Compile Include="Generated\WillCall\MerchDivisionController.cs" />
+    <Compile Include="Generated\WillCall\MerchDownload.cs" />
+    <Compile Include="Generated\WillCall\MerchDownloadController.cs" />
+    <Compile Include="Generated\WillCall\MerchJoinCat.cs" />
+    <Compile Include="Generated\WillCall\MerchJoinCatController.cs" />
+    <Compile Include="Generated\WillCall\MerchSize.cs" />
+    <Compile Include="Generated\WillCall\MerchSizeController.cs" />
+    <Compile Include="Generated\WillCall\MerchStock.cs" />
+    <Compile Include="Generated\WillCall\MerchStockController.cs" />
+    <Compile Include="Generated\WillCall\PendingOperation.cs" />
+    <Compile Include="Generated\WillCall\PendingOperationController.cs" />
+    <Compile Include="Generated\WillCall\PostPurchaseText.cs" />
+    <Compile Include="Generated\WillCall\PostPurchaseTextController.cs" />
+    <Compile Include="Generated\WillCall\ProductAccess.cs" />
+    <Compile Include="Generated\WillCall\ProductAccessController.cs" />
+    <Compile Include="Generated\WillCall\ProductAccessProduct.cs" />
+    <Compile Include="Generated\WillCall\ProductAccessProductController.cs" />
+    <Compile Include="Generated\WillCall\ProductAccessUser.cs" />
+    <Compile Include="Generated\WillCall\ProductAccessUserController.cs" />
+    <Compile Include="Generated\WillCall\Promoter.cs" />
+    <Compile Include="Generated\WillCall\PromoterController.cs" />
+    <Compile Include="Generated\WillCall\ReportDailySale.cs" />
+    <Compile Include="Generated\WillCall\ReportDailySaleController.cs" />
+    <Compile Include="Generated\WillCall\Required.cs" />
+    <Compile Include="Generated\WillCall\RequiredController.cs" />
+    <Compile Include="Generated\WillCall\RequiredInvoiceFee.cs" />
+    <Compile Include="Generated\WillCall\RequiredInvoiceFeeController.cs" />
+    <Compile Include="Generated\WillCall\RequiredMerch.cs" />
+    <Compile Include="Generated\WillCall\RequiredMerchController.cs" />
+    <Compile Include="Generated\WillCall\RequiredShowTicketPastPurchase.cs" />
+    <Compile Include="Generated\WillCall\RequiredShowTicketPastPurchaseController.cs" />
+    <Compile Include="Generated\WillCall\SalePromotion.cs" />
+    <Compile Include="Generated\WillCall\SalePromotionAward.cs" />
+    <Compile Include="Generated\WillCall\SalePromotionAwardController.cs" />
+    <Compile Include="Generated\WillCall\SalePromotionController.cs" />
+    <Compile Include="Generated\WillCall\SalePromotionTrigger.cs" />
+    <Compile Include="Generated\WillCall\SalePromotionTriggerController.cs" />
+    <Compile Include="Generated\WillCall\SaleRule.cs" />
+    <Compile Include="Generated\WillCall\SaleRuleController.cs" />
+    <Compile Include="Generated\WillCall\Search.cs" />
+    <Compile Include="Generated\WillCall\SearchController.cs" />
+    <Compile Include="Generated\WillCall\ServiceCharge.cs" />
+    <Compile Include="Generated\WillCall\ServiceChargeController.cs" />
+    <Compile Include="Generated\WillCall\ShipmentBatch.cs" />
+    <Compile Include="Generated\WillCall\ShipmentBatchController.cs" />
+    <Compile Include="Generated\WillCall\ShipmentBatchInvoiceShipment.cs" />
+    <Compile Include="Generated\WillCall\ShipmentBatchInvoiceShipmentController.cs" />
+    <Compile Include="Generated\WillCall\Show.cs" />
+    <Compile Include="Generated\WillCall\ShowController.cs" />
+    <Compile Include="Generated\WillCall\ShowDate.cs" />
+    <Compile Include="Generated\WillCall\ShowDateController.cs" />
+    <Compile Include="Generated\WillCall\ShowEvent.cs" />
+    <Compile Include="Generated\WillCall\ShowEventController.cs" />
+    <Compile Include="Generated\WillCall\ShowLink.cs" />
+    <Compile Include="Generated\WillCall\ShowLinkController.cs" />
+    <Compile Include="Generated\WillCall\ShowStatus.cs" />
+    <Compile Include="Generated\WillCall\ShowStatusController.cs" />
+    <Compile Include="Generated\WillCall\ShowTicket.cs" />
+    <Compile Include="Generated\WillCall\ShowTicketController.cs" />
+    <Compile Include="Generated\WillCall\ShowTicketDosTicket.cs" />
+    <Compile Include="Generated\WillCall\ShowTicketDosTicketController.cs" />
+    <Compile Include="Generated\WillCall\ShowTicketPackageLink.cs" />
+    <Compile Include="Generated\WillCall\ShowTicketPackageLinkController.cs" />
+    <Compile Include="Generated\WillCall\SiteConfig.cs" />
+    <Compile Include="Generated\WillCall\SiteConfigController.cs" />
+    <Compile Include="Generated\WillCall\StoreCredit.cs" />
+    <Compile Include="Generated\WillCall\StoreCreditController.cs" />
+    <Compile Include="Generated\WillCall\StoredProcedures.cs" />
+    <Compile Include="Generated\WillCall\Subscription.cs" />
+    <Compile Include="Generated\WillCall\SubscriptionController.cs" />
+    <Compile Include="Generated\WillCall\SubscriptionEmail.cs" />
+    <Compile Include="Generated\WillCall\SubscriptionEmailController.cs" />
+    <Compile Include="Generated\WillCall\SubscriptionUser.cs" />
+    <Compile Include="Generated\WillCall\SubscriptionUserController.cs" />
+    <Compile Include="Generated\WillCall\TicketStock.cs" />
+    <Compile Include="Generated\WillCall\TicketStockController.cs" />
+    <Compile Include="Generated\WillCall\Tune.cs" />
+    <Compile Include="Generated\WillCall\TuneController.cs" />
+    <Compile Include="Generated\WillCall\UserCouponRedemption.cs" />
+    <Compile Include="Generated\WillCall\UserCouponRedemptionController.cs" />
+    <Compile Include="Generated\WillCall\UserEvent.cs" />
+    <Compile Include="Generated\WillCall\UserEventController.cs" />
+    <Compile Include="Generated\WillCall\UserPreviousEmail.cs" />
+    <Compile Include="Generated\WillCall\UserPreviousEmailController.cs" />
+    <Compile Include="Generated\WillCall\Vendor.cs" />
+    <Compile Include="Generated\WillCall\VendorController.cs" />
+    <Compile Include="Generated\WillCall\Venue.cs" />
+    <Compile Include="Generated\WillCall\VenueController.cs" />
+    <Compile Include="Generated\WillCall\VwShowTicketWithPending.cs" />
+    <Compile Include="Overridden\ChargeStatement.cs" />
+    <Compile Include="Overridden\ChargeHourly.cs" />
+    <Compile Include="Overridden\AspnetUser.cs" />
+    <Compile Include="Overridden\AspnetUserOld.cs" />
+    <Compile Include="Overridden\Age.cs" />
+    <Compile Include="Overridden\Charities.cs" />
+    <Compile Include="Overridden\Inventory.cs" />
+    <Compile Include="Overridden\ProductAccess.cs" />
+    <Compile Include="Overridden\HeaderImage.cs" />
+    <Compile Include="Overridden\RequiredMerch.cs" />
+    <Compile Include="Overridden\MerchBundleItem.cs" />
+    <Compile Include="Overridden\MerchBundle.cs" />
+    <Compile Include="Overridden\PostPurchase.cs" />
+    <Compile Include="Overridden\RequiredShowTicketPastPurchase.cs" />
+    <Compile Include="Overridden\Download.cs" />
+    <Compile Include="Overridden\ShipmentBatch.cs" />
+    <Compile Include="Overridden\ShowEvent.cs" />
+    <Compile Include="Overridden\WorldshipRow.cs" />
+    <Compile Include="Overridden\SimpleShow.cs" />
+    <Compile Include="Overridden\Required.cs" />
+    <Compile Include="Overridden\PendingOperation.cs" />
+    <Compile Include="Overridden\ShowDisplay_Legacy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Overridden\StoreCredit.cs" />
+    <Compile Include="Overridden\Mailer.cs" />
+    <Compile Include="Overridden\UserCouponRedemption.cs" />
+    <Compile Include="Overridden\ShowDateDisplay.cs" />
+    <Compile Include="Overridden\ShowDisplay.cs" />
+    <Compile Include="Overridden\EmailLetter.cs" />
+    <Compile Include="Overridden\SalePromotionAward.cs" />
+    <Compile Include="Overridden\Lottery.cs" />
+    <Compile Include="Overridden\LotteryRequest.cs" />
+    <Compile Include="Overridden\ServiceCharge.cs" />
+    <Compile Include="Overridden\ShowDateCollection.cs" />
+    <Compile Include="QueryRow\InventoryCheckRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryRow\ItemBillShips.cs" />
+    <Compile Include="QueryRow\ShopifyExport.cs" />
+    <Compile Include="Reporting\DailyReport.cs" />
+    <Compile Include="QueryRow\SalesReportBundleRow.cs" />
+    <Compile Include="QueryRow\SalesReportRow.cs" />
+    <Compile Include="QueryRow\MerchSalesDetailRow.cs" />
+    <Compile Include="QueryRow\NumTixInPeriodRow.cs" />
+    <Compile Include="QueryRow\ServiceFeeBreakdownRow.cs" />
+    <Compile Include="QueryRow\TicketCountRow.cs" />
+    <Compile Include="Overridden\HistorySubscriptionEmail.cs" />
+    <Compile Include="Overridden\HistoryPricing.cs" />
+    <Compile Include="Overridden\HistoryInventory.cs" />
+    <Compile Include="Overridden\FaqCategorie.cs" />
+    <Compile Include="Overridden\SalePromotion.cs" />
+    <Compile Include="Overridden\SubscriptionUser.cs" />
+    <Compile Include="Overridden\SubscriptionEmail.cs" />
+    <Compile Include="Overridden\Subscription.cs" />
+    <Compile Include="Overridden\Vendor.cs" />
+    <Compile Include="Overridden\OrderExchange.cs" />
+    <Compile Include="Overridden\InvoiceShipmentItem.cs" />
+    <Compile Include="Overridden\InvoiceShipment.cs" />
+    <Compile Include="Overridden\OrderRefund.cs" />
+    <Compile Include="Overridden\UserEvent.cs" />
+    <Compile Include="QueryRow\Report_DatesTickets.cs" />
+    <Compile Include="QueryRow\ShippingFulfillment.cs" />
+    <Compile Include="QueryRow\ReportRow.cs" />
+    <Compile Include="Derived\_ContextBase.cs" />
+    <Compile Include="Derived\_Depender.cs" />
+    <Compile Include="Derived\_Config.cs" />
+    <Compile Include="Derived\_Error.cs" />
+    <Compile Include="Derived\_Enums.cs" />
+    <Compile Include="Overridden\Act.cs" />
+    <Compile Include="Derived\_LookupCollection.cs" />
+    <Compile Include="Overridden\AuthorizeNet.cs" />
+    <Compile Include="Overridden\Cashew.cs" />
+    <Compile Include="Overridden\InventoryMerchInRange.cs" />
+    <Compile Include="Overridden\MerchCollection.cs" />
+    <Compile Include="QueryRow\InventoryDiscrep_TicketRow.cs" />
+    <Compile Include="Overridden\InvoiceEvent.cs" />
+    <Compile Include="Overridden\EventQ.cs" />
+    <Compile Include="Overridden\ItemImage.cs" />
+    <Compile Include="QueryRow\InventoryMerchItemRow.cs" />
+    <Compile Include="QueryRow\TicketSalesRow.cs" />
+    <Compile Include="Overridden\CustomerInvoiceRow.cs" />
+    <Compile Include="Overridden\HintQuestion.cs" />
+    <Compile Include="Overridden\Invoice.cs" />
+    <Compile Include="Overridden\InvoiceItem.cs" />
+    <Compile Include="Overridden\InvoiceBillShip.cs" />
+    <Compile Include="Overridden\InvoiceFee.cs" />
+    <Compile Include="Overridden\InvoiceTransaction.cs" />
+    <Compile Include="Overridden\JShowAct.cs" />
+    <Compile Include="Overridden\JShowPromoter.cs" />
+    <Compile Include="Overridden\MailQueue.cs" />
+    <Compile Include="Overridden\Merch.cs" />
+    <Compile Include="Overridden\MerchCategorie.cs" />
+    <Compile Include="Overridden\MerchColor.cs" />
+    <Compile Include="Overridden\MerchDivision.cs" />
+    <Compile Include="Overridden\MerchJoinCat.cs" />
+    <Compile Include="Overridden\MerchSize.cs" />
+    <Compile Include="Overridden\MerchStock.cs" />
+    <Compile Include="Overridden\Promoter.cs" />
+    <Compile Include="Overridden\SaleRule.cs" />
+    <Compile Include="Overridden\ShipMethod.cs" />
+    <Compile Include="Overridden\Show.cs" />
+    <Compile Include="Overridden\ShowDate.cs" />
+    <Compile Include="Overridden\ShowLink.cs" />
+    <Compile Include="Overridden\ShowTicket.cs" />
+    <Compile Include="Overridden\FaqItem.cs" />
+    <Compile Include="Overridden\TicketStock.cs" />
+    <Compile Include="Overridden\Venue.cs" />
+    <Compile Include="Overridden\Customer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{75275DDF-963B-44B5-B0B6-FB5BB87002A6}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\SubSonic.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DB\" />
+    <Folder Include="dll\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

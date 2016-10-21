@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Mailer_EmailLetterPreview.aspx.cs" Inherits="WillCallWeb.Admin.AdminControls.Mailer_EmailLetterPreview" %>
+<asp:Literal ID="litEmailLetter" runat="server" />
