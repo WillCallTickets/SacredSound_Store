@@ -72,14 +72,6 @@ namespace Wcss
                 //bool init = false;
                 while (dr.Read())
                 {
-                    //if (!init)
-                    //{
-                    //    list.Add(new ListItem(string.Empty));
-                    //    list.Add(new ListItem("...related matches...", string.Empty));
-
-                    //    init = true;
-                    //}
-
                     list.Add(new ListItem(dr.GetValue(dr.GetOrdinal("Name")).ToString(), dr.GetValue(dr.GetOrdinal("Id")).ToString()));
                 }
 
